@@ -1,12 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Box, Grommet } from "grommet";
+
+const AppBar = props => (
+  <Box
+    tag="header"
+    direction="row"
+    align="center"
+    justify="between"
+    background="brand"
+    pad={{ left: "medium", right: "small", vertical: "small" }}
+    elevation="medium"
+    style={{ zIndex: "1" }}
+    {...props}
+  />
+);
+
+const theme = {
+  global: {
+    font: {
+      family: "Roboto",
+      size: "14px",
+      height: "20px"
+    }
+  }
+};
 
 function App() {
   return (
-    <div className="App">
+    <Grommet theme={theme} plain>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -19,7 +41,8 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
+      <AppBar>Hello Grommet!</AppBar>
+    </Grommet>
   );
 }
 
