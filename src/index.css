@@ -2,14 +2,14 @@
 .burger-menu.open {
   display: inline-block;
   cursor: pointer;
-  position: fixed;
+  position: sticky;
   right: 20px;
   bottom: 40px;
   z-index: 9999;
-  background: #fff;
+  /* background: #fff; */
   padding: 10px;
   border-radius: 25px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); */
 }
 
 .burger-menu .bar1,
