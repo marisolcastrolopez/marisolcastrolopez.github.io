@@ -7,7 +7,8 @@ export default ({ close }) => (
       <li onClick={close}>Eye Road</li>
       <li onClick={close}>Share a Smile</li>
       <li onClick={close}>Burger Queen</li>
-      <li onClick={close}>About</li>
+      <li onClick={close}>About Me</li>
+      <li onClick={close}>Let's talk</li>
     </ul>
   </div>
 );

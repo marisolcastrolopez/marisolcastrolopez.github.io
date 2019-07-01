@@ -1,3 +1,13 @@
+import React, { Component } from 'react';
+import Home from "./Home";
+
+export default class App extends Component {
+  render() {
+    return (
+        <Home />
+    );
+  }
+}
 // import React, { Component } from "react";
 // import { render } from "react-dom";
 // import Popup from "reactjs-popup";
@@ -21,27 +31,6 @@
 //   border: "none",
 
 // };
-import React, { Component } from 'react';
-import './style.css';
-import MultipleElements from "./multiple-elements.js";
-
-export default class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      name: 'React'
-    };
-  }
-
-  render() {
-    return (
-      <div className="container">
-        <MultipleElements />
-      </div>
-    );
-  }
-}
-
 // const App = () => (
 //   <>
 //     <Layout>
