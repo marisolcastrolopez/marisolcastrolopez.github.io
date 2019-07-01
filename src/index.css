@@ -6,9 +6,9 @@
   right: 20px;
   bottom: 40px;
   z-index: 9999;
-  /* background: #fff; */
   padding: 10px;
   border-radius: 25px;
+    /* background: #fff; */
   /* box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); */
 }
 
@@ -37,6 +37,10 @@
 }
 
 /* Menu */
+/* .burger-menu.open .menu {
+  -webkit-transform: rotate(45deg) translate(-6px, -6px);
+  transform: rotate(45deg) translate(-6px, -6px);
+} */
 
 .menu {
   width: 100%;
