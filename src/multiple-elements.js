@@ -21,71 +21,99 @@ const contentStyle = {
 };
 
 class MultipleElements extends Component {
-constructor(props){
+  constructor(props) {
     super(props);
     // logo container
     this.logoContainer = null;
     // logo tween
     this.logoTween = null;
-}
+  }
 
-
-componentDidMount(){
+  componentDidMount() {
     // create logo tween
-    this.logoTween = new TimelineLite({ paused:true })
-        .to(this.logoContainer, 1, { autoAlpha: 0, y: 50 }, 0.1);
-}
+    this.logoTween = new TimelineLite({ paused: true }).to(
+      this.logoContainer,
+      1,
+      { autoAlpha: 0, y: 10 },
+      0.1
+    );
+  }
 
-
-render(){
-    return <div className="container">
+  render() {
+    return (
+      <div className="container">
         <div className="row">
+          <div className="col-12 mt-3">
+            <h3 className="text-center">Simple Tween</h3>
+            <p>
+              Animates the GSAP logo to the right of it's original position and
+              finally does a 360 degrees rotation. You can use the buttons to
+              control the animation.
+            </p>
+            <p>
+              Uses the <strong>ref</strong> inline callback to create a
+              reference to the DOM element, which is then used in the{" "}
+              <strong>componentDidMount</strong> event to create the GSAP
+              instance.
+            </p>
+            <hr />
+          </div>
 
-            <div className="col-12 mt-3">
-                <h3 className="text-center">Simple Tween</h3>
-                <p>Animates the GSAP logo to the right of it's original position and finally does a 360 degrees rotation. You can use the buttons to control the animation.</p>
-                <p>Uses the <strong>ref</strong> inline callback to create a reference to the DOM element, which is then used in the <strong>componentDidMount</strong> event to create the GSAP instance.</p>
-                <hr/>
+          <div className="col-12">
+            <h3 className="text-center">Control Logo Tween</h3>
+            <p>Use the buttons to control the Logo Tween</p>
+            <div className="mb-2 btn-group">
+              <button
+                className="btn gsap-btn"
+                onClick={() => this.logoTween.play()}
+              >
+                Play
+              </button>
+              <button
+                className="btn gsap-btn"
+                onClick={() => this.logoTween.pause()}
+              >
+                Pause
+              </button>
+              <button
+                className="btn gsap-btn"
+                onClick={() => this.logoTween.reverse()}
+              >
+                Reverse
+              </button>
+              <button
+                className="btn gsap-btn"
+                onClick={() => this.logoTween.restart()}
+              >
+                Restart
+              </button>
             </div>
-
-            <div className="col-12">
-                <h3 className="text-center">Control Logo Tween</h3>
-                <p>Use the buttons to control the Logo Tween</p>
-                <div className="mb-2 btn-group">
-                    <button
-                        className="btn gsap-btn"
-                        onClick={() => this.logoTween.play()}
-                    >Play</button>
-                    <button
-                        className="btn gsap-btn"
-                        onClick={() => this.logoTween.pause()}
-                    >Pause</button>
-                    <button
-                        className="btn gsap-btn"
-                        onClick={() => this.logoTween.reverse()}
-                    >Reverse</button>
-                    <button
-                        className="btn gsap-btn"
-                        onClick={() => this.logoTween.restart()}
-                    >Restart</button>
-                </div>
-                <hr />
-            </div>
-
-            <div className="col-12 mt-3">
-                <div>
-                    <p ref={ p => this.logoContainer = p }>Hola</p>
-                </div>
-            </div>
-
+            <hr />
+          </div>
+          <Layout>
+            <Header>
+              <div ref={img => (this.logoContainer = img)}>
+                <Popup
+                  modal
+                  overlayStyle={{ background: "rgba(255,255,255,0.98" }}
+                  contentStyle={contentStyle}
+                  closeOnDocumentClick={false}
+                  trigger={open => <BurgerIcon open={open}  />}
+                >
+                  {close => <Menu close={close} />}
+                </Popup>
+              </div>
+            </Header>
+            <Content />
+            <Footer>Footer</Footer>
+          </Layout>
         </div>
-    </div>;
-}
+      </div>
+    );
+  }
 }
 
 export default MultipleElements;
-
-
 
 //   constructor(props) {
 //     super(props);
