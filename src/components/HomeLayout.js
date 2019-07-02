@@ -1,46 +1,20 @@
 import React, { Component } from "react";
-import Popup from "reactjs-popup";
-import BurgerIcon from "./BurgerIcon";
-import Menu from "./Menu";
 import "../css/index.css";
 // import 'antd/dist/antd.css';
 import { Layout } from "antd";
+import PopupMenu from "./PopoupMenu";
+import HomeContent from "./HomeContent";
 const { Header, Footer, Content } = Layout;
-
-const contentStyle = {
-  background: "white",
-  width: "80%",
-  border: "none",
-  color: "gray"
-};
 
 class Home extends Component {
   render() {
     return (
       <Layout>
         <Header>
-          <Popup
-            modal
-            overlayStyle={{ background: "rgba(255,255,255,0.98" }}
-            contentStyle={contentStyle}
-            closeOnDocumentClick={false}
-            trigger={open => <BurgerIcon open={open} />}
-          >
-            {close => <Menu close={close} />}
-          </Popup>
+          <PopupMenu />
         </Header>
         <Content>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <span className="titles">Hello! I'm Marisol Castro</span>
-          <br />
-          <span>How's things going</span>
+          <HomeContent />
         </Content>
         <Footer>Footer</Footer>
       </Layout>

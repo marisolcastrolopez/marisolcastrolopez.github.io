@@ -9,8 +9,12 @@ export default ({ close }) => (
       <li onClick={close}>Burger Queen</li>
       <li onClick={close}>About Me</li>
       <li onClick={close}>Let's talk</li>
+      <br/>
+      <li>
+        <i class="fab fa-linkedin-in fa-lg padFAwe"></i>
+        <i class="fab fa-github fa-lg padFAwe"></i>
+        <i class="far fa-envelope fa-lg padFAwe"></i>
+      </li>
     </ul>
   </div>
 );
-
-
