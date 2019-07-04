@@ -1,20 +1,60 @@
 import React from "react";
-import { Icon } from 'antd';
+import { Icon } from "antd";
+import { Link } from "react-router-dom";
 
 export default ({ close }) => (
   <div className="menu">
     <ul>
-      <li onClick={close}>Home</li>
-      <li onClick={close}>Eye Road</li>
-      <li onClick={close}>Share a Smile</li>
-      <li onClick={close}>Burger Queen</li>
-      <li onClick={close}>About Me</li>
-      <li onClick={close}>Let's talk</li>
-      <br/>
+      <li onClick={close}>
+        <Link to="/">Home</Link>
+      </li>
+      <li onClick={close}>
+        <Link to="/burgerqueen">Burger Queen</Link>
+      </li>
+      <li onClick={close}>
+        <Link to="/sharesmile">Share a Smile</Link>
+      </li>
+      <li onClick={close}>
+        <Link to="/eyeroad">Eye Road</Link>
+      </li>
+      <li onClick={close}>
+        <Link to="/alyapp">Aly App</Link>
+      </li>
+      <li onClick={close}>
+        <Link to="/aboutme">About Me</Link>
+      </li>
+      <li onClick={close}>
+        <Link to="/burgerqueen">Let's talk</Link>
+      </li>
+      <br />
       <li>
-        <Icon type="linkedin" className="padFAwe" style={{ fontSize: '35px', color: '#7D7987' }}/>
-        <Icon type="github" className="padFAwe" style={{ fontSize: '35px', color: '#7D7987' }}/>
-        <Icon type="mail" className="padFAwe" style={{ fontSize: '35px', color: '#7D7987' }}/>
+        <a
+          href={"https://www.linkedin.com/in/marisolcastrolopez/"}
+          target={"_blank"}
+        >
+          <Icon
+            type="linkedin"
+            className="padFAwe"
+            style={{ fontSize: "35px", color: "#7D7987" }}
+          />
+        </a>
+        <a href={"https://github.com/marisolcastrolopez/"} target={"_blank"}>
+          <Icon
+            type="github"
+            className="padFAwe"
+            style={{ fontSize: "35px", color: "#7D7987" }}
+          />
+        </a>
+        <a
+          href={"https://www.linkedin.com/in/marisolcastrolopez/"}
+          target={"_blank"}
+        >
+          <Icon
+            type="mail"
+            className="padFAwe"
+            style={{ fontSize: "35px", color: "#7D7987" }}
+          />
+        </a>
       </li>
     </ul>
   </div>

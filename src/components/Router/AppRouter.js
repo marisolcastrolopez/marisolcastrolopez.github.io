@@ -1,17 +1,22 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Role from './Role'; //1° Screen Role - component
-import WaiterList from './WaiterList'; //2° Screen Waiter List - component
-import WaiterUI from './WaiterUI'; //3° Screen Waiter UI - component
+import HomeLayout from '../Home/HomeLayout';
+import BurgerQueen from '../BurgerQueen/BurgerQueen';
+import ShareSmile from '../ShareSmile/ShareSmile';
+import EyeRoad from '../EyeRoad/EyeRoad';
+import AlyApp from '../AlyApp/AlyApp';
+import AboutMe from '../AboutMe/AboutMe';
 
 
 const AppRouter = () => {
   return (
-
     <Router>
-        <Route exact path="/" component={Role} />
-        <Route path="/waiterlist" component={WaiterList} />
-        <Route path="/waiter-home" component={WaiterUI} />
+        <Route exact path="/" component={HomeLayout} />
+        <Route path="/burgerqueen" component={BurgerQueen} />
+        <Route path="/sharesmile" component={ShareSmile} />
+        <Route path="/eyeroad" component={EyeRoad} />
+        <Route path="/alyapp" component={AlyApp} />
+        <Route path="/aboutme" component={AboutMe} />
     </Router>
   );
 }
