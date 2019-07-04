@@ -8,14 +8,33 @@ body {
 .ant-layout-header {
   height: 90px;
 }
+.pad-section {
+  padding-left: 4%;
+  padding-right: 4%;
+}
 /* Texts */
-.titles {
+.sizeTile {
   font-size: 2.5em;
+}
+.sizeMedium {
+  font-size: 1.5em;
+}
+.boldTitle {
+  font-weight: 700;
+  font-size: 1em;
+}
+.titles {
   font-weight: 400;
+  font-size: 2.5em;
 }
 .padFAwe{
   padding-right: 10%;
   padding-left: 10%;
+}
+.upperStyle {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.4em;
 }
 /*Burger*/
 .burger-menu,
@@ -85,3 +104,5 @@ body {
 .menu li:hover {
   color: #ff0000;
 }
+
+

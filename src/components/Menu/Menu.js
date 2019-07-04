@@ -1,4 +1,5 @@
 import React from "react";
+import { Icon } from 'antd';
 
 export default ({ close }) => (
   <div className="menu">
@@ -11,9 +12,9 @@ export default ({ close }) => (
       <li onClick={close}>Let's talk</li>
       <br/>
       <li>
-        <i class="fab fa-linkedin-in fa-lg padFAwe"></i>
-        <i class="fab fa-github fa-lg padFAwe"></i>
-        <i class="far fa-envelope fa-lg padFAwe"></i>
+        <Icon type="linkedin" className="padFAwe" style={{ fontSize: '35px', color: '#7D7987' }}/>
+        <Icon type="github" className="padFAwe" style={{ fontSize: '35px', color: '#7D7987' }}/>
+        <Icon type="mail" className="padFAwe" style={{ fontSize: '35px', color: '#7D7987' }}/>
       </li>
     </ul>
   </div>

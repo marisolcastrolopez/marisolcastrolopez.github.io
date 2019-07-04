@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import "../css/index.css";
+import "../../css/index.css";
 // import 'antd/dist/antd.css';
 import { Layout } from "antd";
-import PopupMenu from "./PopoupMenu";
-import HomeContent from "./HomeContent";
+import PopupMenu from "../Menu/PopoupMenu";
+import HomeContent from "../Home/HomeContent";
 const { Header, Footer, Content } = Layout;
 
 class Home extends Component {
@@ -16,7 +16,7 @@ class Home extends Component {
         <Content>
           <HomeContent />
         </Content>
-        <Footer>Footer</Footer>
+        {/* <Footer>Footer</Footer> */}
       </Layout>
     );
   }

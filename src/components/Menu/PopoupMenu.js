@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Popup from "reactjs-popup";
-import BurgerIcon from "./BurgerIcon";
-import Menu from "./Menu";
-import "../css/index.css";
+import BurgerIcon from "../Menu/BurgerIcon";
+import Menu from "../Menu/Menu";
+import "../../css/index.css";
 
 const contentStyle = {
   background: "white",

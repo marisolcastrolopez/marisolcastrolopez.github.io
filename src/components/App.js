@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import HomeLayout from "./HomeLayout";
+import HomeLayout from "./Home/HomeLayout";
 
 export default class App extends Component {
   render() {
