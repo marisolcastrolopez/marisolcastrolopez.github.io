@@ -36,6 +36,10 @@ body {
   font-weight: 400;
   letter-spacing: 0.4em;
 }
+/* Links */
+a {
+  text-decoration: none;
+}
 /*Burger*/
 .burger-menu,
 .burger-menu.open {
@@ -105,16 +109,14 @@ body {
   color: #ff0000;
 }
 
-
-
-
+/* Transition words animation */
 .reveals-main {
   width: 100%;
   height: 100%;
   overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   cursor: pointer;
 }
 .reveals-main > div {
