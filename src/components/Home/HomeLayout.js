@@ -9,7 +9,7 @@ const { Header, Footer, Content } = Layout;
 class Home extends Component {
   render() {
     return (
-      <Layout>
+      <Layout className="container-home-bg">
         <Header>
           <PopupMenu />
         </Header>
