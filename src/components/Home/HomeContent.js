@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import "../../css/index.css";
 import { Transition, animated } from "react-spring/renderprops";
-import { Icon } from 'antd';
+import { Link } from "react-router-dom";
+import { Icon } from "antd";
 // import { useSpring } from "react-spring";
 // import Test from "../Home/Test"
 // import 'antd/dist/antd.css';
@@ -35,24 +36,28 @@ export default class HomeContent extends Component {
               show &&
               (props => (
                 <animated.div style={props}>
-                  <span className="titles">
+                  <span className="titles whiteFont">
                     Hello! I'm <br />
-                    <span className="boldTitle">Marisol Castro</span>
+                    <span className="boldTitle whiteFont">Marisol Castro</span>
                   </span>
                   <br />
-                  <span className="sizeMedium">
+                  <span className="sizeMedium whiteFont">
                     I'm a Frontend Developer and Graphic Designer.
                   </span>
                   <br />
-                  <span>
+                  <span className="whiteFont">
                     I am a detail-oriented person. I feel passion about
                     science,technology UX and UI.
                   </span>
                   <br />
                   <br />
-                  <button className="line-btn">
-                    <span className="upperStyle">See Proyects <Icon className="arrow1 iconAnt" type="arrow-right" /></span>
-                  </button>
+                  <br />
+                  <Link className="line-btn" to="/burgerqueen">
+                    <span className="upperStyle">
+                      See Proyects
+                      <Icon className="arrow1 iconAnt" type="arrow-right" />
+                    </span>
+                  </Link>
                 </animated.div>
               ))
             }

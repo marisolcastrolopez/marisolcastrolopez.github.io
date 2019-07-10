@@ -5,10 +5,9 @@ import Menu from "../Menu/Menu";
 import "../../css/index.css";
 
 const contentStyle = {
-  background: "white",
+  background: "transparent",
   width: "80%",
   border: "none",
-  color: "gray"
 };
 
 export default class PopupMenu extends Component {
@@ -16,7 +15,7 @@ export default class PopupMenu extends Component {
     return (
       <Popup
         modal
-        overlayStyle={{ background: "rgba(255,255,255,0.98" }}
+        overlayStyle={{ background: "rgba(253, 253, 253)" }}
         contentStyle={contentStyle}
         closeOnDocumentClick={false}
         trigger={open => <BurgerIcon open={open} />}

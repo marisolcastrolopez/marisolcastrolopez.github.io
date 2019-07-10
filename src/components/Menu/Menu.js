@@ -6,25 +6,25 @@ export default ({ close }) => (
   <div className="menu">
     <ul>
       <li onClick={close}>
-        <Link to="/">Home</Link>
+        <Link className="menu-links" to="/">Home</Link>
       </li>
       <li onClick={close}>
-        <Link to="/burgerqueen">Burger Queen</Link>
+        <Link className="menu-links" to="/burgerqueen">Burger Queen</Link>
       </li>
       <li onClick={close}>
-        <Link to="/sharesmile">Share a Smile</Link>
+        <Link className="menu-links" to="/sharesmile">Share a Smile</Link>
       </li>
       <li onClick={close}>
-        <Link to="/eyeroad">Eye Road</Link>
+        <Link className="menu-links" to="/eyeroad">Eye Road</Link>
       </li>
       <li onClick={close}>
-        <Link to="/alyapp">Aly App</Link>
+        <Link className="menu-links" to="/alyapp">Aly App</Link>
       </li>
       <li onClick={close}>
-        <Link to="/aboutme">About Me</Link>
+        <Link className="menu-links" to="/aboutme">About Me</Link>
       </li>
       <li onClick={close}>
-        <Link to="/burgerqueen">Let's talk</Link>
+        <Link className="menu-links" to="/burgerqueen">Let's talk</Link>
       </li>
       <br />
       <li>
@@ -35,14 +35,14 @@ export default ({ close }) => (
           <Icon
             type="linkedin"
             className="padFAwe"
-            style={{ fontSize: "35px", color: "#7D7987" }}
+            style={{ fontSize: "35px", color: "#da32ab" }}
           />
         </a>
         <a href={"https://github.com/marisolcastrolopez/"} target={"_blank"}>
           <Icon
             type="github"
             className="padFAwe"
-            style={{ fontSize: "35px", color: "#7D7987" }}
+            style={{ fontSize: "35px", color: "#da32ab" }}
           />
         </a>
         <a
@@ -52,7 +52,7 @@ export default ({ close }) => (
           <Icon
             type="mail"
             className="padFAwe"
-            style={{ fontSize: "35px", color: "#7D7987" }}
+            style={{ fontSize: "35px", color: "#da32ab" }}
           />
         </a>
       </li>
