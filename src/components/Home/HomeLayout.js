@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import "../../css/index.css";
 // import 'antd/dist/antd.css';
+import { Link } from "react-router-dom";
 import { Layout } from "antd";
 import PopupMenu from "../Menu/PopoupMenu";
 import HomeContent from "../Home/HomeContent";
+import logoImg from "../../img/logo-port-m.png";
 const { Header, Footer, Content } = Layout;
 
 class Home extends Component {
@@ -11,6 +13,21 @@ class Home extends Component {
     return (
       <Layout className="container-home-bg">
         <Header>
+        <Link style={{ zIndex: 9999}} to="/burgerqueen">
+        <img
+            className="logo-img"
+            src={logoImg}
+            style={{
+              width: `${30}%`,
+              maxWidth: `${7.5}em`,
+              paddingLeft: `${2}%`,
+              height: "auto",
+              float: "left",
+              zIndex: 9999
+            }}
+            alt="logo-img"
+          />
+        </Link>
           <PopupMenu />
         </Header>
         <Content>

@@ -20,42 +20,22 @@
 //     );
 //   }
 // }
-import React, { Fragment } from "react";
-import { Spring } from "react-spring/renderprops";
+import React, { Component, Fragment } from "react";
+import Description from "../BurgerQueen/Description"
 import { Layout } from "antd";
 import PopupMenu from "../Menu/PopoupMenu";
-const { Header, Footer, Content } = Layout;
+const { Header } = Layout;
 
-export default function BurgerQueen() {
-  return (
+
+export default class BurgerQueen extends Component {
+  render() {
+    return (
     <Fragment>
       <Header>
         <PopupMenu />
       </Header>
-      <Spring
-        from={{ opacity: 0, marginLeft: -8000 }}
-        to={{ opacity: 1, marginLeft: 0 }}
-      >
-        {props => (
-          <div style={props}>
-            <div style={c2style}>
-              <h1>Hi there</h1>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Quaerat numquam, nulla nostrum, officia soluta inventore
-                repellendus, eaque nihil sed voluptas ea? Deserunt iure,
-                suscipit exercitationem earum aliquam iusto nihil nulla!
-              </p>
-            </div>
-          </div>
-        )}
-      </Spring>
+      <Description/>
     </Fragment>
-  );
+    )
+  }
 }
-
-const c2style = {
-  background: "#F9CE21",
-  color: "#111",
-  padding: "1.5rem"
-};

@@ -23,14 +23,19 @@ export default class HomeContent extends Component {
             native
             items={this.state.show}
             from={{
-              position: "absolute",
+              position: "relative",
               overflow: "hidden",
-              height: 0,
-              paddingTop: `${70}vh`,
+              height: `${100}vh`,
+              paddingTop: `${15}vh`,
               paddingBottom: `${5}%`,
-              paddingRight: `${4}%`
+              paddingRight: `${4}%`,
+              // opacity: 0
+              transform: 'translate3d(0,-120px,0)'
             }}
-            enter={[{ height: "auto" }]}
+            enter={[{
+              // opacity: 1,
+              transform: 'translate3d(0,0px,0)'
+               }]}
           >
             {show =>
               show &&
