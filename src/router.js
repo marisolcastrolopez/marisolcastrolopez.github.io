@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import HomeLayout from '../Home/HomeLayout';
-import BurgerQueen from '../BurgerQueen/BurgerQueen';
-import ShareSmile from '../ShareSmile/ShareSmile';
-import EyeRoad from '../EyeRoad/EyeRoad';
-import AlyApp from '../AlyApp/AlyApp';
-import AboutMe from '../AboutMe/AboutMe';
+import HomeLayout from './components/Home/HomeLayout';
+import BurgerQueen from './components/BurgerQueen/BurgerQueen';
+import ShareSmile from './components/ShareSmile/ShareSmile';
+import EyeRoad from './components/EyeRoad/EyeRoad';
+import AlyApp from './components/AlyApp/AlyApp';
+import AboutMe from './components/AboutMe/AboutMe';
 
 
 const AppRouter = () => {
