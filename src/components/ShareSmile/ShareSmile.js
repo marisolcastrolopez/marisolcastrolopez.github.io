@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import "../../css/index.css";
 
-export default class BurgerQueen extends Component {
-  render() {
+class ShareSmile extends Component {
+  render () {
     return (
-     <p>ShareaSmile</p>
-    );
+      <div><p>Hello revealed</p></div>
+    )
   }
 }
+export default ShareSmile;
