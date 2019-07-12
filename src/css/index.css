@@ -12,7 +12,6 @@ html,
 body {
   margin: 0;
   height: 100%;
-  overflow: hidden;
 }
 /* Layout, position, padding, margin, height */
 .ant-layout-header {
@@ -53,6 +52,11 @@ body {
 .purple {
   color: #da32ab;
 }
+.abs-icon{
+  position: absolute;
+  padding-left: 70%;
+  margin-top: -3%;
+}
 /* Transition words animation */
 .reveals-main {
   width: 100%;
@@ -73,6 +77,7 @@ body {
   background: url('../img/bg-home-sol.jpg') no-repeat;
     background-size: cover;
     height: 100vh;
+    overflow: hidden;
 }
 
 /*Burger*/
@@ -164,6 +169,16 @@ body {
 }
 .line-btn:focus {
   outline:0;
+}
+.inner-btn {
+  border: 1px solid white;
+  background: transparent;
+  width: 80%;
+  padding: 0.7em;
+  font-size: 0.9em;
+  border-radius: 3px;
+  color: white;
+  transition: background 0.5s ease;
 }
 /* Links */
 a {

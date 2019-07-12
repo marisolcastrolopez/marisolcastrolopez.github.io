@@ -1,6 +1,8 @@
 import React, { Fragment } from "react";
-import { Link } from "react-router-dom";
-import { Icon } from "antd";
+// import { Link } from "react-router-dom";
+import { Icon, Row, Col } from "antd";
+import "../../css/grid.css";
+
 import { Spring } from "react-spring/renderprops";
 
 export default function Description() {
@@ -14,21 +16,34 @@ export default function Description() {
           <div style={props}>
             <div style={c2style}>
               <h1>Burger Queen</h1>
+              <span className="upperStyle">Year: 2019</span>
               <p>
                 Is a Point of Sale (POS), for a restaurant. Designed and
                 inspired in order to have the best User Experience through a
                 friendly User Interface.
               </p>
-              <a
-              className="line-btn"
-                href={"https://burger-queen-gdl002marisol.firebaseapp.com/"}
-                target={"_blank"}
-              >
-                <span className="upperStyle">
-                  Launch Demo
-                  <Icon className="arrow1 iconAnt" type="arrow-right" />
-                </span>
-              </a>
+
+              <Row type="flex">
+                <Col xs={20} sm={20} md={12} lg={12} xl={12}>
+                  <a
+                    className="inner-btn"
+                    href={"https://burger-queen-gdl002marisol.firebaseapp.com/"}
+                    target={"_blank"}
+                  >
+                    <span className="upperStyle">Launch Demo</span>
+                  </a>
+                </Col>
+                <Col className="abs-icon" xs={4} sm={4} md={12} lg={12} xl={12}>
+                  <a
+                    href={
+                      "https://github.com/marisolcastrolopez/gdl002-burger-queen"
+                    }
+                    target={"_blank"}
+                  >
+                    <Icon type="github" style={{ fontSize: "35px" }} />
+                  </a>
+                </Col>
+              </Row>
             </div>
             <div style={c3style}>
               <p>Technologies:</p>

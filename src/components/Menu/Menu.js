@@ -6,9 +6,10 @@ import { Spring } from "react-spring/renderprops";
 
 export default ({ close }) => (
   <Spring
-    config={{ duration: 400 }}
+    delay={150}
     from={{ opacity: 0, marginLeft: 0 }}
     to={{ opacity: 1, marginLeft: 0 }}
+    leave={ {opacity: 0} }
   >
     {props => (
       <div style={props} className="menu">
