@@ -9,3 +9,4 @@ ReactDOM.render(
   </HashRouter>,
   document.getElementById("root")
 );
+//Hash router working when refreshing deployed page.

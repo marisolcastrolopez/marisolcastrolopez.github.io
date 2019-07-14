@@ -26,3 +26,4 @@ const AppRouter = () => {
 
 export default AppRouter;
 //Change in webpackDevServer.config.js line 74 react-scripts/config/webpackDevServer.config.js
+//Hash router working when refreshing deployed page.
