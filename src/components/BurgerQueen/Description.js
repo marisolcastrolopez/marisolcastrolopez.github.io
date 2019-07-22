@@ -16,7 +16,7 @@ export default function Description() {
         {props => (
           <div style={props}>
             <div style={c2style}>
-              <h1>Burger Queen</h1>
+              <span>Burger Queen</span>
               <span className="upperStyle">Year: 2019</span>
               <p>
                 Is a Point of Sale (POS), for a restaurant. Designed and
