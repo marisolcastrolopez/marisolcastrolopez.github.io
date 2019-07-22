@@ -31,9 +31,8 @@ export default class BurgerQueen extends Component {
   render() {
     return (
     <Fragment>
-      <Header>
-        <PopupMenu />
-      </Header>
+    <PopupMenu />
+      <Header style={{ position: "absolute" }}/>
       <Description/>
     </Fragment>
     )

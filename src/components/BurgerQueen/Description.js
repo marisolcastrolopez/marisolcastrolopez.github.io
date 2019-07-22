@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 // import { Link } from "react-router-dom";
 import { Icon, Row, Col } from "antd";
 import "../../css/grid.css";
+import "../../css/index.css"
 
 import { Spring } from "react-spring/renderprops";
 
@@ -22,13 +23,13 @@ export default function Description() {
                 inspired in order to have the best User Experience through a
                 friendly User Interface.
               </p>
-
               <Row type="flex">
                 <Col xs={20} sm={20} md={12} lg={12} xl={12}>
                   <a
                     className="inner-btn"
                     href={"https://burger-queen-gdl002marisol.firebaseapp.com/"}
                     target={"_blank"}
+                    rel="nofollow noopener noreferrer"
                   >
                     <span className="upperStyle">Launch Demo</span>
                   </a>
@@ -39,6 +40,7 @@ export default function Description() {
                       "https://github.com/marisolcastrolopez/gdl002-burger-queen"
                     }
                     target={"_blank"}
+                    rel="nofollow noopener noreferrer"
                   >
                     <Icon type="github" style={{ fontSize: "35px" }} />
                   </a>
@@ -65,12 +67,14 @@ export default function Description() {
 }
 
 const c2style = {
-  background: "#F9CE21",
-  color: "#111",
-  padding: "1.5rem"
+  // background: "#F9CE21",
+  color: "#292525",
+  padding: "1.5rem",
+  paddingTop: 55,
+  backgroundImage: `linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%)`
 };
 const c3style = {
   background: "pink",
   color: "#111",
-  padding: "1.5rem"
+  padding: "1.5rem",
 };

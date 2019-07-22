@@ -1,86 +1,14 @@
 body {
-  /* background-color: rgb(68, 52, 138); */
-  /* background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%); */
-  /* color: #fff; */
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   margin: 0;
-  /* background: url('../img/bg-home-sol.jpg') no-repeat;
-  background-size: cover;
-  height: 100vh; */
 }
 html,
 body {
   margin: 0;
   height: 100%;
 }
-/* Layout, position, padding, margin, height */
-.ant-layout-header {
-  height: 90px;
-}
-.pad-section {
-  padding-left: 4%;
-  padding-right: 4%;
-}
-.padFAwe{
-  padding-right: 10%;
-  padding-left: 10%;
-}
-/* Texts */
-.sizeTitle {
-  font-size: 2.5em;
-}
-.sizeMedium {
-  font-size: 1.5em;
-}
-.boldTitle {
-  font-weight: 700;
-  font-size: 1em;
-}
-.titles {
-  font-weight: 400;
-  font-size: 2.5em;
-}
-.upperStyle {
-  font-family: 'Raleway', sans-serif;
-  text-transform: uppercase;
-  font-weight: 400;
-  letter-spacing: 0.3em;
-}
-.whiteFont {
-  color: #fff;
-}
-.purple {
-  color: #da32ab;
-}
-.abs-icon{
-  position: absolute;
-  padding-left: 70%;
-  margin-top: -3%;
-}
-/* Transition words animation */
-.reveals-main {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  /* justify-content: center; */
-  cursor: pointer;
-}
-.reveals-main > div {
-  /* font-weight: 800;
-  font-size: 4em; */
-  will-change: transform, opacity;
-  overflow: hidden;
-}
-.container-home-bg{
-  background: url('../img/bg-home-sol.jpg') no-repeat;
-    background-size: cover;
-    height: 100vh;
-    overflow: hidden;
-}
 
-/*Burger*/
+/*Burger Menu*/
 .burger-menu,
 .burger-menu.open {
   cursor: pointer;
@@ -143,6 +71,63 @@ body {
 .menu li:hover {
   color: #ff0000;
 }
+/* Layout, position, padding, margin, height */
+.ant-layout-header {
+  height: 90px;
+}
+.pad-section {
+  padding-left: 4%;
+  padding-right: 4%;
+}
+.padFAwe {
+  padding-right: 10%;
+  padding-left: 10%;
+}
+/* Texts */
+.sizeTitle {
+  font-size: 2.5em;
+}
+.sizeMedium {
+  font-size: 1.5em;
+}
+.boldTitle {
+  font-weight: 700;
+  font-size: 1em;
+}
+.titles {
+  font-weight: 400;
+  font-size: 2.5em;
+}
+.upperStyle {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+}
+.whiteFont {
+  color: #fff;
+}
+.purple {
+  color: #da32ab;
+}
+.abs-icon {
+  position: absolute;
+  padding-left: 70%;
+  margin-top: -3%;
+}
+/* Transition words animation */
+.reveals-main {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.reveals-main > div {
+  will-change: transform, opacity;
+  overflow: hidden;
+}
 
 /* Button's style*/
 .line-btn {
@@ -165,10 +150,10 @@ body {
   -webkit-transition: background 0.5s ease;
   -moz-transition: background 0.5s ease;
   -o-transition: background 0.5s ease;
-  transition: background  0.5s ease;
+  transition: background 0.5s ease;
 }
 .line-btn:focus {
-  outline:0;
+  outline: 0;
 }
 .inner-btn {
   border: 1px solid white;
@@ -192,4 +177,16 @@ a {
 }
 .menu-links:visited {
   color: #888;
+}
+/*Home screen*/
+.container-home-bg {
+  background: url("../img/bg-home-sol.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/*Burger Queen Project*/
+bg-bg {
+  background-image: linear-gradient(-20deg, #f794a4 0%, #fdd6bd 100%);
 }
