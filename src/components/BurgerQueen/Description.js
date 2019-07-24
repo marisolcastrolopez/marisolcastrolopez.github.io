@@ -2,7 +2,8 @@ import React, { Fragment } from "react";
 // import { Link } from "react-router-dom";
 import { Icon, Row, Col } from "antd";
 import "../../css/grid.css";
-import "../../css/index.css"
+import "../../css/index.css";
+import bqphone from "../../img/bg-bq-phone.png";
 
 import { Spring } from "react-spring/renderprops";
 
@@ -16,34 +17,47 @@ export default function Description() {
         {props => (
           <div style={props}>
             <div style={c2style}>
-              <span>Burger Queen</span>
-              <span className="upperStyle">Year: 2019</span>
-              <p>
-                Is a Point of Sale (POS), for a restaurant. Designed and
-                inspired in order to have the best User Experience through a
-                friendly User Interface.
-              </p>
-              <Row type="flex">
-                <Col xs={20} sm={20} md={12} lg={12} xl={12}>
+              <Row className="pad-bur" type="flex">
+                <Col
+                  style={{ paddingLeft: `${6}%`, paddingRight: `${6}%` }}
+                  className="pad-textbur"
+                  xs={24}
+                  sm={24}
+                  md={24}
+                  lg={24}
+                  xl={24}
+                >
+                  <span className="proj-title title-orange">Burger <br/> Queen</span>
+                  <p />
+                  <span className="upperStyle">Year: 2019</span>
+                  <p>
+                    Is a Point of Sale (POS), for a restaurant. Designed and
+                    inspired in order to have the best User Experience through a
+                    friendly User Interface.
+                  </p>
+                </Col>
+                <Col  style={{ paddingLeft: `${6}%`, paddingRight: `${6}%`, paddingTop: `${4}%` }} xs={24} sm={24} md={24} lg={24} xl={24}>
                   <a
-                    className="inner-btn"
+                    className="inner-btn pad-btn-demo"
                     href={"https://burger-queen-gdl002marisol.firebaseapp.com/"}
                     target={"_blank"}
                     rel="nofollow noopener noreferrer"
                   >
-                    <span className="upperStyle">Launch Demo</span>
+                    <span className="upperStyle">Demo</span>
                   </a>
-                </Col>
-                <Col className="abs-icon" xs={4} sm={4} md={12} lg={12} xl={12}>
                   <a
+                    className="inner-btn"
                     href={
                       "https://github.com/marisolcastrolopez/gdl002-burger-queen"
                     }
                     target={"_blank"}
                     rel="nofollow noopener noreferrer"
                   >
-                    <Icon type="github" style={{ fontSize: "35px" }} />
+                    <span className="upperStyle">Code {`<>`} </span>
                   </a>
+                </Col>
+                <Col xs={24} sm={24} md={24} lg={24} xl={24}>
+                  <img className="responsive" src={bqphone} alt="bg" />
                 </Col>
               </Row>
             </div>
@@ -67,14 +81,14 @@ export default function Description() {
 }
 
 const c2style = {
-  // background: "#F9CE21",
+  background: "#FFF",
   color: "#292525",
-  padding: "1.5rem",
-  paddingTop: 55,
-  backgroundImage: `linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%)`
+  // padding: "0% 6% 0% 6%",
+  paddingTop: 55
+  // backgroundImage: `linear-gradient(to right, #f2994a, #f2c94c)`
 };
 const c3style = {
-  background: "pink",
-  color: "#111",
-  padding: "1.5rem",
+  background: "#2e2e2e",
+  color: "#FFF",
+  padding: "1.5rem"
 };

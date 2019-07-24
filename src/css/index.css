@@ -83,6 +83,15 @@ body {
   padding-right: 10%;
   padding-left: 10%;
 }
+.pad-btn-demo {
+  margin-right: 8%;
+}
+.pad-bur {
+  padding-bottom: 4%;
+}
+.pad-bur-btns{
+    padding-bottom: 4%;
+}
 /* Texts */
 .sizeTitle {
   font-size: 2.5em;
@@ -114,6 +123,13 @@ body {
   position: absolute;
   padding-left: 70%;
   margin-top: -3%;
+}
+.proj-title{
+  font-weight: 700;
+  font-size: 3em;
+}
+.title-orange {
+  color: #f2994a;
 }
 /* Transition words animation */
 .reveals-main {
@@ -156,13 +172,13 @@ body {
   outline: 0;
 }
 .inner-btn {
-  border: 1px solid white;
+  border: 1px solid #f2994a;
   background: transparent;
   width: 80%;
   padding: 0.7em;
   font-size: 0.9em;
   border-radius: 3px;
-  color: white;
+  color: #f2994a;
   transition: background 0.5s ease;
 }
 /* Links */
@@ -187,6 +203,13 @@ a {
 }
 
 /*Burger Queen Project*/
-bg-bg {
+.bg-bg {
   background-image: linear-gradient(-20deg, #f794a4 0%, #fdd6bd 100%);
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
+.pad-textbur {
+  padding: 0% 6% 0% 6%;
 }
