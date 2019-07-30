@@ -26,7 +26,7 @@ export default class HomeContent extends Component {
               position: "relative",
               overflow: "hidden",
               height: `${100}vh`,
-              paddingTop: `${15}vh`,
+              paddingTop: `${12}vh`,
               paddingBottom: `${5}%`,
               paddingRight: `${4}%`,
               // opacity: 0

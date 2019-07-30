@@ -88,7 +88,7 @@ body {
 
 }
 .pad-bur {
-  padding-bottom: 4%;
+  padding-bottom: 2.5rem;
   padding-top: 2.5rem;
 }
 .pad-bur-btns{
@@ -96,10 +96,13 @@ body {
 }
 /* Texts */
 .sizeTitle {
-  font-size: 2.5em;
+  font-size: 2.5rem;
+}
+.sizeLarge {
+  font-size: 2rem;
 }
 .sizeMedium {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 .boldTitle {
   font-weight: 700;
@@ -152,12 +155,13 @@ body {
   border: 1px solid white;
   background: transparent;
   width: 80%;
-  padding: 1em 2em 1em 2em;
-  font-size: 0.9em;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  font-size: 0.7rem;
   border-radius: 3px;
   color: white;
   transition: background 0.5s ease;
-   display: inline-block;
+  display: inline-block;
+  text-align: center;
 }
 
 .line-btn:hover {

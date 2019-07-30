@@ -47,21 +47,39 @@ export default function Description() {
                     Burger
                   </span>
                   <span
-                    style={{ display: "block", marginTop: `${-0.6}rem`, }}
+                    style={{ display: "block", marginTop: `${-0.6}rem` }}
                     className="proj-title title-orange"
                   >
                     Queen
                   </span>
                   <p>
-                    <span style={{ display: "block", fontSize: `${0.85}rem`, color: "#63605f" }}>
+                    <span
+                      style={{
+                        display: "block",
+                        fontSize: `${0.85}rem`,
+                        color: "#63605f"
+                      }}
+                    >
                       <span style={{ fontWeight: "700" }}>Credits:</span>{" "}
                       Marisol Castro
                     </span>
-                    <span style={{ display: "block", fontSize: `${0.85}rem`, color: "#63605f" }}>
+                    <span
+                      style={{
+                        display: "block",
+                        fontSize: `${0.85}rem`,
+                        color: "#63605f"
+                      }}
+                    >
                       <span style={{ fontWeight: "700" }}>Role:</span> Front-End
                       Developer / UI Designer
                     </span>
-                    <span style={{ display: "block", fontSize: `${0.85}rem`, color: "#63605f" }}>
+                    <span
+                      style={{
+                        display: "block",
+                        fontSize: `${0.85}rem`,
+                        color: "#63605f"
+                      }}
+                    >
                       <span style={{ fontWeight: "700" }}>Date:</span> May 2019
                     </span>
                   </p>
@@ -108,7 +126,7 @@ export default function Description() {
               </Row>
             </div>
             <div style={c3style}>
-              <p>Technologies:</p>
+              {/* <p>Technologies:</p>
               <ul>
                 <li>ReactJS</li>
                 <li>React Router</li>
@@ -117,7 +135,13 @@ export default function Description() {
                 <li>CSS</li>
                 <li>Firebase deployment</li>
                 <li>Antd Design UI framework</li>
-              </ul>
+              </ul> */}
+              <span style={{ display: "block" }} className="upperStyle">
+                Next project
+              </span>
+              <span style={{ display: "block", fontWeight: 700, paddingTop: `${0.2}rem` }} className="sizeLarge">
+                Share a Smile
+              </span>
             </div>
           </div>
         )}
@@ -136,5 +160,11 @@ const c2style = {
 const c3style = {
   background: "#2e2e2e",
   color: "#FFF",
-  padding: "1.5rem"
+  // padding: "1.5rem",
+  textAlign: "center",
+  // position: "fixed",
+  bottom: -4,
+  width: `${100}%`,
+  paddingTop: `${3.5}rem`,
+  paddingBottom: `${3.5}rem`,
 };
