@@ -27,16 +27,62 @@ export default function Description() {
                   lg={24}
                   xl={24}
                 >
-                  <span className="proj-title title-orange">Burger <br/> Queen</span>
-                  <p />
-                  <span className="upperStyle">Year: 2019</span>
+                  <span style={{ float: "right" }} className="upperStyle">
+                    Next >
+                  </span>
+                </Col>
+                <Col
+                  style={{ paddingLeft: `${6}%`, paddingRight: `${6}%` }}
+                  className="pad-textbur"
+                  xs={24}
+                  sm={24}
+                  md={24}
+                  lg={24}
+                  xl={24}
+                >
+                  <span
+                    style={{ display: "block" }}
+                    className="proj-title title-orange"
+                  >
+                    Burger
+                  </span>
+                  <span
+                    style={{ display: "block", marginTop: `${-4}%`, }}
+                    className="proj-title title-orange"
+                  >
+                    Queen
+                  </span>
                   <p>
+                    <span style={{ display: "block", fontSize: `${0.85}rem`, color: "#63605f" }}>
+                      <span style={{ fontWeight: "700" }}>Credits:</span>{" "}
+                      Marisol Castro
+                    </span>
+                    <span style={{ display: "block", fontSize: `${0.85}rem`, color: "#63605f" }}>
+                      <span style={{ fontWeight: "700" }}>Role:</span> Front-End
+                      Developer / UI Designer
+                    </span>
+                    <span style={{ display: "block", fontSize: `${0.85}rem`, color: "#63605f" }}>
+                      <span style={{ fontWeight: "700" }}>Date:</span> May 2019
+                    </span>
+                  </p>
+                  <p style={{ fontSize: `${0.9}rem`, paddingTop: `${3}%` }}>
                     Is a Point of Sale (POS), for a restaurant. Designed and
                     inspired in order to have the best User Experience through a
                     friendly User Interface.
                   </p>
                 </Col>
-                <Col  style={{ paddingLeft: `${6}%`, paddingRight: `${6}%`, paddingTop: `${4}%` }} xs={24} sm={24} md={24} lg={24} xl={24}>
+                <Col
+                  style={{
+                    paddingLeft: `${6}%`,
+                    paddingRight: `${6}%`,
+                    paddingTop: `${4}%`
+                  }}
+                  xs={24}
+                  sm={24}
+                  md={24}
+                  lg={24}
+                  xl={24}
+                >
                   <a
                     className="inner-btn pad-btn-demo"
                     href={"https://burger-queen-gdl002marisol.firebaseapp.com/"}
