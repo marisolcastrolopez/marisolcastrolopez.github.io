@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 // import { Link } from "react-router-dom";
-import { Icon, Row, Col } from "antd";
+import { Button, Row, Col } from "antd";
 import "../../css/grid.css";
 import "../../css/index.css";
 import bqphone from "../../img/bg-bq-phone.png";
@@ -47,7 +47,7 @@ export default function Description() {
                     Burger
                   </span>
                   <span
-                    style={{ display: "block", marginTop: `${-4}%`, }}
+                    style={{ display: "block", marginTop: `${-0.6}rem`, }}
                     className="proj-title title-orange"
                   >
                     Queen
@@ -103,7 +103,7 @@ export default function Description() {
                   </a>
                 </Col>
                 <Col xs={24} sm={24} md={24} lg={24} xl={24}>
-                  <img className="responsive" src={bqphone} alt="bg" />
+                  {/* <img className="responsive" src={bqphone} alt="bg" /> */}
                 </Col>
               </Row>
             </div>
