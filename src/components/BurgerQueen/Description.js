@@ -3,7 +3,7 @@ import React, { Fragment } from "react";
 import { Button, Row, Col } from "antd";
 import "../../css/grid.css";
 import "../../css/index.css";
-import bqphone from "../../img/bg-bq-phone.png";
+// import bqphone from "../../img/bg-bq-phone.png";
 
 import { Spring } from "react-spring/renderprops";
 
@@ -17,23 +17,28 @@ export default function Description() {
         {props => (
           <div style={props}>
             <div style={c2style}>
-              <Row className="pad-bur" type="flex">
+              <Row type="flex">
                 <Col
-                  style={{ paddingLeft: `${6}%`, paddingRight: `${6}%` }}
-                  className="pad-textbur"
+                  style={{
+                    paddingLeft: `${1}rem`,
+                    paddingRight: `${1}rem`,
+                    paddingTop: `${3}rem`
+                  }}
                   xs={24}
                   sm={24}
                   md={24}
                   lg={24}
                   xl={24}
                 >
-                  <span style={{ float: "right" }} className="upperStyle">
+                  <span
+                    style={{ float: "right", color: "#63605f" }}
+                    className="upperStyle"
+                  >
                     Next >
                   </span>
                 </Col>
                 <Col
-                  style={{ paddingLeft: `${6}%`, paddingRight: `${6}%` }}
-                  className="pad-textbur"
+                  style={{ paddingLeft: `${1}rem`, paddingRight: `${1}rem` }}
                   xs={24}
                   sm={24}
                   md={24}
@@ -52,48 +57,71 @@ export default function Description() {
                   >
                     Queen
                   </span>
-                  <p>
-                    <span
-                      style={{
-                        display: "block",
-                        fontSize: `${0.85}rem`,
-                        color: "#63605f"
-                      }}
-                    >
-                      <span style={{ fontWeight: "700" }}>Credits:</span>{" "}
-                      Marisol Castro
-                    </span>
-                    <span
-                      style={{
-                        display: "block",
-                        fontSize: `${0.85}rem`,
-                        color: "#63605f"
-                      }}
-                    >
-                      <span style={{ fontWeight: "700" }}>Role:</span> Front-End
-                      Developer / UI Designer
-                    </span>
-                    <span
-                      style={{
-                        display: "block",
-                        fontSize: `${0.85}rem`,
-                        color: "#63605f"
-                      }}
-                    >
-                      <span style={{ fontWeight: "700" }}>Date:</span> May 2019
-                    </span>
-                  </p>
-                  <p style={{ fontSize: `${0.9}rem`, paddingTop: `${3}%` }}>
-                    Is a Point of Sale (POS), for a restaurant. Designed and
+                </Col>
+                <Col
+                  style={{
+                    paddingLeft: `${1}rem`,
+                    paddingRight: `${1}rem`,
+                    paddingTop: `${1}rem`
+                  }}
+                  xs={24}
+                  sm={24}
+                  md={24}
+                  lg={24}
+                  xl={24}
+                >
+                  <span
+                    style={{
+                      display: "block",
+                      fontSize: `${0.85}rem`,
+                      color: "#63605f"
+                    }}
+                  >
+                    <span style={{ fontWeight: "700" }}>Credits:</span> Marisol
+                    Castro
+                  </span>
+                  <span
+                    style={{
+                      display: "block",
+                      fontSize: `${0.85}rem`,
+                      color: "#63605f"
+                    }}
+                  >
+                    <span style={{ fontWeight: "700" }}>Role:</span> Front-End
+                    Developer / UI Designer
+                  </span>
+                  <span
+                    style={{
+                      display: "block",
+                      fontSize: `${0.85}rem`,
+                      color: "#63605f"
+                    }}
+                  >
+                    <span style={{ fontWeight: "700" }}>Date:</span> May 2019
+                  </span>
+                </Col>
+                <Col
+                  style={{
+                    paddingLeft: `${1}rem`,
+                    paddingRight: `${1}rem`
+                  }}
+                  xs={24}
+                  sm={24}
+                  md={24}
+                  lg={24}
+                  xl={24}
+                >
+                  <p style={{ fontSize: `${0.9}rem`, color: "#63605f" }}>
+                    Is a Point of Sale (POS, Web App), for a restaurant. Designed and
                     inspired in order to have the best User Experience through a
                     friendly User Interface.
                   </p>
                 </Col>
                 <Col
                   style={{
-                    paddingLeft: `${6}%`,
-                    paddingRight: `${6}%`,
-                    paddingTop: `${4}%`
+                    paddingLeft: `${1}rem`,
+                    paddingRight: `${1}rem`,
+                    paddingTop: `${1.2}rem`
                   }}
                   xs={24}
                   sm={24}
@@ -123,9 +151,63 @@ export default function Description() {
                 <Col xs={24} sm={24} md={24} lg={24} xl={24}>
                   {/* <img className="responsive" src={bqphone} alt="bg" /> */}
                 </Col>
+                <Col
+                  style={{
+                    paddingLeft: `${1}rem`,
+                    paddingRight: `${1}rem`
+                  }}
+                  xs={24}
+                  sm={24}
+                  md={24}
+                  lg={24}
+                  xl={24}
+                >
+                  <span
+                    style={{
+                      display: "block",
+                      fontWeight: 700,
+                      fontSize: `${1.4}rem`,
+                      paddingTop: `${1.5}rem`,
+                      color: "#f2994a"
+                    }}
+                  >
+                    Technologies used
+                  </span>
+                  <span style={{ fontSize: `${0.9}rem`, color: "#63605f" }}>
+                    ReactJS, React Router, JSX, HTML, CSS, Firebase
+                    deployment, Antd Design UI framework, Figma.
+                  </span>
+                </Col>
+                <Col
+                  style={{
+                    paddingLeft: `${1}rem`,
+                    paddingRight: `${1}rem`
+                  }}
+                  xs={24}
+                  sm={24}
+                  md={24}
+                  lg={24}
+                  xl={24}
+                >
+                  {/* <span
+                    style={{
+                      display: "block",
+                      fontWeight: 700,
+                      fontSize: `${1.4}rem`,
+                      paddingTop: `${1.5}rem`,
+                      color: "#f2994a"
+                    }}
+                  >
+                   Devices
+                  </span> */}
+                  <span style={{ fontSize: `${0.9}rem`, color: "#63605f" }}>
+                  For Tablet and Desktop
+                  </span>
+                </Col>
+                
               </Row>
             </div>
-            <div style={c3style}>
+            <div style={footer}>
               {/* <p>Technologies:</p>
               <ul>
                 <li>ReactJS</li>
@@ -139,7 +221,14 @@ export default function Description() {
               <span style={{ display: "block" }} className="upperStyle">
                 Next project
               </span>
-              <span style={{ display: "block", fontWeight: 700, paddingTop: `${0.2}rem` }} className="sizeLarge">
+              <span
+                style={{
+                  display: "block",
+                  fontWeight: 700,
+                  paddingTop: `${0.2}rem`
+                }}
+                className="sizeLarge"
+              >
                 Share a Smile
               </span>
             </div>
@@ -151,20 +240,15 @@ export default function Description() {
 }
 
 const c2style = {
-  background: "#FFF",
-  color: "#292525",
-  // padding: "0% 6% 0% 6%",
   paddingTop: 55
-  // backgroundImage: `linear-gradient(to right, #f2994a, #f2c94c)`
 };
-const c3style = {
+const footer = {
   background: "#2e2e2e",
   color: "#FFF",
-  // padding: "1.5rem",
   textAlign: "center",
-  // position: "fixed",
-  bottom: -4,
+  position: "relative",
+  bottom: -10,
   width: `${100}%`,
   paddingTop: `${3.5}rem`,
-  paddingBottom: `${3.5}rem`,
+  paddingBottom: `${3.5}rem`
 };

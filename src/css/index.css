@@ -94,6 +94,10 @@ body {
 .pad-bur-btns{
     padding-bottom: 4%;
 }
+.pad-lfrg-pages {
+  padding-left: 1rem;
+   padding-right: 1rem;
+}
 /* Texts */
 .sizeTitle {
   font-size: 2.5rem;
@@ -218,7 +222,4 @@ a {
 .responsive {
   width: 100%;
   height: auto;
-}
-.pad-textbur {
-  padding: 0% 6% 0% 6%;
 }
