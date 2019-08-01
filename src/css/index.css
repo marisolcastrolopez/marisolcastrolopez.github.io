@@ -142,6 +142,9 @@ body {
 .title-orange {
   color: #f2994a;
 }
+.wht {
+  color: #f7f7f7;
+}
 /* Transition words animation */
 .reveals-main {
   width: 100%;
@@ -185,15 +188,25 @@ body {
   outline: 0;
 }
 .inner-btn {
-  border: 1px solid #f2994a;
+  /* border: 1px solid #f2994a; */
   background: transparent;
   width: 80%;
   padding: 0.7em;
   font-size: 0.9em;
   border-radius: 3px;
-  color: #f2994a;
+  /* color: #f2994a; */
   transition: background 0.5s ease;
 }
+.btn-orange {
+  /* border: 1px solid #f7f7f7;
+  color: #f7f7f7; */
+  background-color: #f7f7f7;
+    color: #ea8225;
+    -webkit-box-shadow: 2px 3px 23px 3px rgba(0,0,0,0.17);
+    -moz-box-shadow: 2px 3px 23px 3px rgba(0,0,0,0.17);
+    box-shadow: 2px 3px 23px 3px rgba(0,0,0,0.17);
+}
+
 
 
 /* Links */

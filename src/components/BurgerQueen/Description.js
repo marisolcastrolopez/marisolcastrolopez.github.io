@@ -3,7 +3,7 @@ import React, { Fragment } from "react";
 import { Button, Row, Col } from "antd";
 import "../../css/grid.css";
 import "../../css/index.css";
-// import bqphone from "../../img/bg-bq-phone.png";
+import bqphone from "../../img/bg-bq-phone.png";
 
 import { Spring } from "react-spring/renderprops";
 
@@ -11,8 +11,8 @@ export default function Description() {
   return (
     <Fragment>
       <Spring
-        from={{ opacity: 0, marginLeft: -100 }}
-        to={{ opacity: 1, marginLeft: 0 }}
+        from={{ opacity: 0, marginLeft: -100, backgroundColor: "#ea821f" }}
+        to={{ opacity: 1, marginLeft: 0, backgroundColor: "#ea821f" }}
       >
         {props => (
           <div style={props}>
@@ -31,8 +31,8 @@ export default function Description() {
                   xl={24}
                 >
                   <span
-                    style={{ float: "right", color: "#63605f" }}
-                    className="upperStyle"
+                    style={{ float: "right", color: "#f7f7f7" }}
+                    className="upperStyle wht"
                   >
                     Next >
                   </span>
@@ -47,13 +47,13 @@ export default function Description() {
                 >
                   <span
                     style={{ display: "block" }}
-                    className="proj-title title-orange"
+                    className="proj-title wht"
                   >
                     Burger
                   </span>
                   <span
                     style={{ display: "block", marginTop: `${-0.6}rem` }}
-                    className="proj-title title-orange"
+                    className="proj-title wht"
                   >
                     Queen
                   </span>
@@ -74,8 +74,9 @@ export default function Description() {
                     style={{
                       display: "block",
                       fontSize: `${0.85}rem`,
-                      color: "#63605f"
+                      
                     }}
+                    className="wht"
                   >
                     <span style={{ fontWeight: "700" }}>Credits:</span> Marisol
                     Castro
@@ -84,8 +85,9 @@ export default function Description() {
                     style={{
                       display: "block",
                       fontSize: `${0.85}rem`,
-                      color: "#63605f"
+                      
                     }}
+                    className="wht"
                   >
                     <span style={{ fontWeight: "700" }}>Role:</span> Front-End
                     Developer / UI Designer
@@ -94,8 +96,9 @@ export default function Description() {
                     style={{
                       display: "block",
                       fontSize: `${0.85}rem`,
-                      color: "#63605f"
+                      
                     }}
+                    className="wht"
                   >
                     <span style={{ fontWeight: "700" }}>Date:</span> May 2019
                   </span>
@@ -111,10 +114,8 @@ export default function Description() {
                   lg={24}
                   xl={24}
                 >
-                  <p style={{ fontSize: `${0.9}rem`, color: "#63605f" }}>
-                    Is a Point of Sale (POS, Web App), for a restaurant. Designed and
-                    inspired in order to have the best User Experience through a
-                    friendly User Interface.
+                  <p style={{ fontSize: `${0.9}rem`, color: "#f7f7f7", }}>
+                    Point of Sale (POS, Webapp), for a restaurant.
                   </p>
                 </Col>
                 <Col
@@ -130,7 +131,7 @@ export default function Description() {
                   xl={24}
                 >
                   <a
-                    className="inner-btn pad-btn-demo"
+                    className="inner-btn pad-btn-demo btn-orange"
                     href={"https://burger-queen-gdl002marisol.firebaseapp.com/"}
                     target={"_blank"}
                     rel="nofollow noopener noreferrer"
@@ -138,7 +139,7 @@ export default function Description() {
                     <span className="upperStyle">Demo</span>
                   </a>
                   <a
-                    className="inner-btn"
+                    className="inner-btn btn-orange"
                     href={
                       "https://github.com/marisolcastrolopez/gdl002-burger-queen"
                     }
@@ -149,12 +150,13 @@ export default function Description() {
                   </a>
                 </Col>
                 <Col xs={24} sm={24} md={24} lg={24} xl={24}>
-                  {/* <img className="responsive" src={bqphone} alt="bg" /> */}
+                  <img className="responsive" src={bqphone} alt="bg" />
                 </Col>
                 <Col
                   style={{
                     paddingLeft: `${1}rem`,
-                    paddingRight: `${1}rem`
+                    paddingRight: `${1}rem`,
+                    backgroundColor: "#f7f7f7",
                   }}
                   xs={24}
                   sm={24}
@@ -240,7 +242,8 @@ export default function Description() {
 }
 
 const c2style = {
-  paddingTop: 55
+  paddingTop: 55,
+  height: `${100}vh`
 };
 const footer = {
   background: "#2e2e2e",

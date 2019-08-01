@@ -10,6 +10,7 @@ export default ({ close }) => (
     from={{ opacity: 0, marginLeft: 0 }}
     to={{ opacity: 1, marginLeft: 0 }}
     leave={{ opacity: 0 }}
+    // style={{backgroundColor: "#ea821f"}}
   >
     {props => (
       <Fragment>
