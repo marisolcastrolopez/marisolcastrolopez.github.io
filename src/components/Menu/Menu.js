@@ -59,13 +59,19 @@ export default ({ close }) => (
                 About Me
               </Link>
             </li>
-            <li onClick={close}>
-              <Link className="menu-links" to="/burgerqueen">
-                Let's talk
-              </Link>
-            </li>
           </ul>
         </div>
+        <Row style={{ textAlign: "center", paddingBottom: `${1}rem`, paddingTop: `${2}rem`, }} type="flex">
+          <Col
+            xs={24}
+            sm={24}
+            md={24}
+            lg={24}
+            xl={24}
+          >
+              <span style={{ fontSize: `${1.2}rem`, color: "#db32ab", fontWeight: 700, }}>Let's talk :)</span>
+        </Col>
+        </Row>
         <Row style={{ textAlign: "center" }} type="flex">
           <Col
             xs={8}
@@ -130,16 +136,6 @@ export default ({ close }) => (
             lg={24}
             xl={24}
           >
-              {/* <a
-                href={"https://www.linkedin.com/in/marisolcastrolopez/"}
-                target={"_blank"}
-              >
-                <Icon
-                  type="linkedin"
-                  className="padFAwe"
-                  style={{ fontSize: "35px", color: "#da32ab" }}
-                />
-              </a> */}
               <span style={{ fontSize: `${1.2}rem`, color: "#db32ab" }}>solcastrodg@gmail.com</span>
           </Col>
         </Row>

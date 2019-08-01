@@ -1,9 +1,12 @@
 import React, { Fragment } from "react";
 // import { Link } from "react-router-dom";
-import { Button, Row, Col } from "antd";
+import { Button, Row, Col, Icon } from "antd";
 import "../../css/grid.css";
 import "../../css/index.css";
 import bqphone from "../../img/bg-bq-phone.png";
+import mockupviews from "../../img/mockups-bqueeen.jpg"
+import mockupfirst from "../../img/mockups-bqueeen-firstui.jpg"
+import mockupsecond from "../../img/mockups-bqueeen-secondui.jpg"
 
 import { Spring } from "react-spring/renderprops";
 
@@ -149,7 +152,7 @@ export default function Description() {
                     <span className="upperStyle">Code {`<>`} </span>
                   </a>
                 </Col>
-                <Col xs={24} sm={24} md={24} lg={24} xl={24}>
+                <Col xs={24} sm={24} md={4} lg={4} xl={4}>
                   <img className="responsive" src={bqphone} alt="bg" />
                 </Col>
                 <Col
@@ -157,6 +160,7 @@ export default function Description() {
                     paddingLeft: `${1}rem`,
                     paddingRight: `${1}rem`,
                     backgroundColor: "#f7f7f7",
+                    textAlign: "center",
                   }}
                   xs={24}
                   sm={24}
@@ -164,6 +168,7 @@ export default function Description() {
                   lg={24}
                   xl={24}
                 >
+                  
                   <span
                     style={{
                       display: "block",
@@ -173,66 +178,26 @@ export default function Description() {
                       color: "#f2994a"
                     }}
                   >
+                    <Icon type="tool" style={{ fontSize: "35px" }} />
+                    <br/>
                     Technologies used
                   </span>
-                  <span style={{ fontSize: `${0.9}rem`, color: "#63605f" }}>
+                  <span style={{ fontSize: `${0.9}rem`, color: "#63605f", backgroundColor: "#f6f7fa", }}>
                     ReactJS, React Router, JSX, HTML, CSS, Firebase
                     deployment, Antd Design UI framework, Figma.
                   </span>
-                </Col>
-                <Col
-                  style={{
-                    paddingLeft: `${1}rem`,
-                    paddingRight: `${1}rem`
-                  }}
-                  xs={24}
-                  sm={24}
-                  md={24}
-                  lg={24}
-                  xl={24}
-                >
-                  {/* <span
-                    style={{
-                      display: "block",
-                      fontWeight: 700,
-                      fontSize: `${1.4}rem`,
-                      paddingTop: `${1.5}rem`,
-                      color: "#f2994a"
-                    }}
-                  >
-                   Devices
-                  </span> */}
-                  <span style={{ fontSize: `${0.9}rem`, color: "#63605f" }}>
+                  <p/>
+                  <span style={{ fontSize: `${0.9}rem`, color: "#63605f", display: "block", fontWeight: 700,}}>
                   For Tablet and Desktop
                   </span>
                 </Col>
-                
+                <Col xs={24} sm={24} md={24} lg={24} xl={24}>
+                  <img className="responsive" src={mockupfirst} alt="bg" />
+                </Col>
+                <Col xs={24} sm={24} md={24} lg={24} xl={24}>
+                  <img className="responsive" src={mockupsecond} alt="bg" />
+                </Col>
               </Row>
-            </div>
-            <div style={footer}>
-              {/* <p>Technologies:</p>
-              <ul>
-                <li>ReactJS</li>
-                <li>React Router</li>
-                <li>JSX</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Firebase deployment</li>
-                <li>Antd Design UI framework</li>
-              </ul> */}
-              <span style={{ display: "block" }} className="upperStyle">
-                Next project
-              </span>
-              <span
-                style={{
-                  display: "block",
-                  fontWeight: 700,
-                  paddingTop: `${0.2}rem`
-                }}
-                className="sizeLarge"
-              >
-                Share a Smile
-              </span>
             </div>
           </div>
         )}
