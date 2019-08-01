@@ -1,28 +1,45 @@
 import React, { Fragment } from "react";
 // import { Link } from "react-router-dom";
-import { Button, Row, Col, Icon } from "antd";
+import { Row, Col, Icon, Layout } from "antd";
 import "../../css/grid.css";
-import "../../css/index.css";
-import bqphone from "../../img/bg-bq-phone.png";
-import mockupviews from "../../img/mockups-bqueeen.jpg"
-import mockupfirst from "../../img/mockups-bqueeen-firstui.jpg"
-import mockupsecond from "../../img/mockups-bqueeen-secondui.jpg"
-import mockupbg from "../../img/mockups-bqueeen-bg.jpg"
-
+// import "../../css/index.css";
+// import bqphone from "../../img/bg-bq-phone.png";
+import { Link } from "react-router-dom";
+import mockupviews from "../../img/mockups-bqueeen.jpg";
+import mockupfirst from "../../img/mockups-bqueeen-firstui.jpg";
+import mockupsecond from "../../img/mockups-bqueeen-secondui.jpg";
+import mockupbg from "../../img/mockups-bqueeen-bg.jpg";
 
 import { Spring } from "react-spring/renderprops";
+const { Footer } = Layout;
 
 export default function Description() {
   return (
     <Fragment>
       <Spring
-        from={{ opacity: 0, marginLeft: -100, backgroundColor: "#ea821f", backgroundImage: `url(${mockupbg})`, backgroundSize: "cover", height: `${100}vh`, backgroundPosition: `${50}% ${50}%`, }}
-        to={{ opacity: 1, marginLeft: 0, backgroundColor: "#ea821f", backgroundSize: "cover", height: `${100}vh`, backgroundPosition: `${50}% ${50}%`, }}
+        from={{
+          opacity: 0,
+          marginLeft: -100,
+          backgroundColor: "#ea821f",
+          backgroundImage: `url(${mockupbg})`,
+          backgroundSize: "cover",
+          height: `${100}vh`,
+          backgroundPosition: `${50}% ${50}%`
+        }}
+        to={{
+          opacity: 1,
+          marginLeft: 0,
+          backgroundColor: "#ea821f",
+          backgroundSize: "cover",
+          height: `${100}vh`,
+          backgroundPosition: `${50}% ${50}%`
+        }}
       >
         {props => (
           <div style={props}>
             <div style={c2style}>
               <Row type="flex">
+                <Col xs={0} sm={0} md={3} lg={3} xl={3} />
                 <Col
                   style={{
                     paddingLeft: `${1.2}rem`,
@@ -31,32 +48,26 @@ export default function Description() {
                   }}
                   xs={24}
                   sm={24}
-                  md={24}
-                  lg={24}
-                  xl={24}
+                  md={21}
+                  lg={21}
+                  xl={21}
                 >
-                  <span
-                    style={{ color: "#f7f7f7" }}
-                    className="upperStyle wht"
-                  >
+                  <span style={{ color: "#f7f7f7" }} className="upperStyle wht">
                     Next >
                   </span>
                 </Col>
-                </Row>
-                {/* height: `${100}vh`,  */}
-                <Row type="flex" style={{ paddingTop: `${8}rem`, }}>
+              </Row>
+              <Row type="flex" style={{ paddingTop: `${8}rem` }}>
+                <Col xs={0} sm={0} md={3} lg={3} xl={3} />
                 <Col
                   style={{ paddingLeft: `${1}rem`, paddingRight: `${1}rem` }}
                   xs={24}
                   sm={24}
-                  md={24}
-                  lg={24}
-                  xl={24}
+                  md={21}
+                  lg={21}
+                  xl={21}
                 >
-                  <span
-                    style={{ display: "block" }}
-                    className="proj-title wht"
-                  >
+                  <span style={{ display: "block" }} className="proj-title wht">
                     Burger
                   </span>
                   <span
@@ -66,8 +77,9 @@ export default function Description() {
                     Queen
                   </span>
                 </Col>
-                </Row>
-                <Row>
+              </Row>
+              <Row>
+                <Col xs={0} sm={0} md={3} lg={3} xl={3} />
                 <Col
                   style={{
                     paddingLeft: `${1}rem`,
@@ -76,15 +88,14 @@ export default function Description() {
                   }}
                   xs={24}
                   sm={24}
-                  md={24}
-                  lg={24}
-                  xl={24}
+                  md={21}
+                  lg={21}
+                  xl={21}
                 >
                   <span
                     style={{
                       display: "block",
-                      fontSize: `${0.85}rem`,
-                      
+                      fontSize: `${0.85}rem`
                     }}
                     className="wht"
                   >
@@ -94,8 +105,7 @@ export default function Description() {
                   <span
                     style={{
                       display: "block",
-                      fontSize: `${0.85}rem`,
-                      
+                      fontSize: `${0.85}rem`
                     }}
                     className="wht"
                   >
@@ -105,16 +115,16 @@ export default function Description() {
                   <span
                     style={{
                       display: "block",
-                      fontSize: `${0.85}rem`,
-                      
+                      fontSize: `${0.85}rem`
                     }}
                     className="wht"
                   >
                     <span style={{ fontWeight: "700" }}>Date:</span> May 2019
                   </span>
                 </Col>
-                </Row>
-                <Row>
+              </Row>
+              <Row>
+                <Col xs={0} sm={0} md={3} lg={3} xl={3} />
                 <Col
                   style={{
                     paddingLeft: `${1}rem`,
@@ -122,16 +132,17 @@ export default function Description() {
                   }}
                   xs={24}
                   sm={24}
-                  md={24}
-                  lg={24}
-                  xl={24}
+                  md={21}
+                  lg={21}
+                  xl={21}
                 >
-                  <p style={{ fontSize: `${0.9}rem`, color: "#f7f7f7", }}>
+                  <p style={{ fontSize: `${0.9}rem`, color: "#f7f7f7" }}>
                     Point of Sale (POS, Webapp), for a restaurant.
                   </p>
                 </Col>
-                </Row>
-                <Row>
+              </Row>
+              <Row>
+                <Col xs={0} sm={0} md={3} lg={3} xl={3} />
                 <Col
                   style={{
                     paddingLeft: `${1}rem`,
@@ -141,9 +152,9 @@ export default function Description() {
                   }}
                   xs={24}
                   sm={24}
-                  md={24}
-                  lg={24}
-                  xl={24}
+                  md={21}
+                  lg={21}
+                  xl={21}
                 >
                   <a
                     className="inner-btn pad-btn-demo btn-orange"
@@ -164,16 +175,14 @@ export default function Description() {
                     <span className="upperStyle">Code {`<>`} </span>
                   </a>
                 </Col>
-                </Row>
-                {/* <Col xs={24} sm={24} md={8} lg={8} xl={8}>
-                  <img className="responsive" src={bqphone} alt="bg" />
-                </Col> */}
+              </Row>
+              <Row>
                 <Col
                   style={{
                     paddingLeft: `${1}rem`,
                     paddingRight: `${1}rem`,
                     backgroundColor: "#f7f7f7",
-                    textAlign: "center",
+                    textAlign: "center"
                   }}
                   xs={24}
                   sm={24}
@@ -181,7 +190,6 @@ export default function Description() {
                   lg={24}
                   xl={24}
                 >
-                  
                   <span
                     style={{
                       display: "block",
@@ -192,25 +200,119 @@ export default function Description() {
                     }}
                   >
                     <Icon type="tool" style={{ fontSize: "35px" }} />
-                    <br/>
+                    <br />
                     Technologies used
                   </span>
-                  <span style={{ fontSize: `${0.9}rem`, color: "#63605f", backgroundColor: "#f6f7fa", }}>
-                    ReactJS, React Router, JSX, HTML, CSS, Firebase
-                    deployment, Antd Design UI framework, Figma.
+                  <span
+                    style={{
+                      fontSize: `${0.9}rem`,
+                      color: "#63605f",
+                      backgroundColor: "#f6f7fa"
+                    }}
+                  >
+                    ReactJS, React Router, JSX, HTML, CSS, Firebase deployment,
+                    Antd Design UI framework, Figma.
                   </span>
-                  <p/>
-                  <span style={{ fontSize: `${0.9}rem`, color: "#63605f", display: "block", fontWeight: 700,}}>
-                  For Tablet and Desktop
+                  <p />
+                  <span
+                    style={{
+                      fontSize: `${0.9}rem`,
+                      color: "#63605f",
+                      display: "block",
+                      fontWeight: 700
+                    }}
+                  >
+                    For Tablet and Desktop
                   </span>
                 </Col>
-                <Col xs={24} sm={24} md={24} lg={24} xl={24}>
+              </Row>
+              <Row
+                style={{
+                  backgroundColor: "#f6f7fa"
+                }}
+              >
+                <Col xs={24} sm={24} md={0} lg={0} xl={0}>
                   <img className="responsive" src={mockupfirst} alt="bg" />
                 </Col>
-                <Col xs={24} sm={24} md={24} lg={24} xl={24}>
+                <Col xs={24} sm={24} md={0} lg={0} xl={0}>
                   <img className="responsive" src={mockupsecond} alt="bg" />
                 </Col>
-              
+                <Col
+                  style={{
+                    paddingLeft: `${2}rem`,
+                    paddingRight: `${2}rem`
+                  }}
+                  xs={0}
+                  sm={0}
+                  md={24}
+                  lg={24}
+                  xl={24}
+                >
+                  <img className="responsive" src={mockupviews} alt="bg" />
+                </Col>
+              </Row>
+              <Footer style={footer}>
+                <Row>
+                  <Col style={{marginBottom: `${1}rem`}} xs={24} sm={24} md={24} lg={24} xl={24}>
+                    <span
+                      style={{
+                        fontSize: `${1.2}rem`,
+                        color: "#f6f7fa",
+                        fontWeight: 700,
+                      }}
+                    >
+                      Let's talk :)
+                    </span>
+                  </Col>
+                </Row>
+                <Row style={{ textAlign: "center", marginBottom: `${1}rem`}} type="flex">
+                <Col xs={3} sm={3} md={9} lg={9} xl={9} />
+                <Col xs={6} sm={6} md={2} lg={2} xl={2}>
+                    <a
+                      href={"https://www.linkedin.com/in/marisolcastrolopez/"}
+                      target={"_blank"}
+                    >
+                      <Icon
+                        type="linkedin"
+                        className="padFAwe"
+                        style={{ fontSize: "30px", color: "#f6f7fa" }}
+                      />
+                    </a>
+                  </Col>
+                  <Col xs={6} sm={6} md={2} lg={2} xl={2}>
+                    <a
+                      href={"https://github.com/marisolcastrolopez/"}
+                      target={"_blank"}
+                    >
+                      <Icon
+                        type="github"
+                        className="padFAwe"
+                        style={{ fontSize: "30px", color: "#f6f7fa" }}
+                      />
+                    </a>
+                  </Col>
+                  <Col xs={6} sm={6} md={2} lg={2} xl={2}>
+                    <a
+                      href={"https://www.linkedin.com/in/marisolcastrolopez/"}
+                      target={"_blank"}
+                    >
+                      <Icon
+                        type="twitter"
+                        className="padFAwe"
+                        style={{ fontSize: "30px", color: "#f6f7fa" }}
+                      />
+                    </a>
+                  </Col>
+                  <Col xs={3} sm={3} md={9} lg={9} xl={9}/>
+                </Row>
+                <Row style={{ textAlign: "center" }} type="flex">
+                  <Col xs={24} sm={24} md={24} lg={24} xl={24}>
+                    <span style={{ fontSize: `${1.2}rem`, color: "#f6f7fa", fontWeight: 100, }}>
+                      solcastrodg@gmail.com
+                    </span>
+                  </Col>
+                </Row>
+              </Footer>
             </div>
           </div>
         )}
@@ -221,14 +323,12 @@ export default function Description() {
 
 const c2style = {
   paddingTop: 55,
-  height: `${100}vh`,
+  height: `${100}vh`
 };
 const footer = {
   background: "#2e2e2e",
   color: "#FFF",
   textAlign: "center",
-  position: "relative",
-  bottom: -10,
   width: `${100}%`,
   paddingTop: `${3.5}rem`,
   paddingBottom: `${3.5}rem`
