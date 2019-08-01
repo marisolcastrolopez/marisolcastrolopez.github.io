@@ -7,6 +7,8 @@ import bqphone from "../../img/bg-bq-phone.png";
 import mockupviews from "../../img/mockups-bqueeen.jpg"
 import mockupfirst from "../../img/mockups-bqueeen-firstui.jpg"
 import mockupsecond from "../../img/mockups-bqueeen-secondui.jpg"
+import mockupbg from "../../img/mockups-bqueeen-bg.jpg"
+
 
 import { Spring } from "react-spring/renderprops";
 
@@ -14,8 +16,8 @@ export default function Description() {
   return (
     <Fragment>
       <Spring
-        from={{ opacity: 0, marginLeft: -100, backgroundColor: "#ea821f" }}
-        to={{ opacity: 1, marginLeft: 0, backgroundColor: "#ea821f" }}
+        from={{ opacity: 0, marginLeft: -100, backgroundColor: "#ea821f", backgroundImage: `url(${mockupbg})`, backgroundSize: "cover", height: `${100}vh`, backgroundPosition: `${50}% ${50}%`, }}
+        to={{ opacity: 1, marginLeft: 0, backgroundColor: "#ea821f", backgroundSize: "cover", height: `${100}vh`, backgroundPosition: `${50}% ${50}%`, }}
       >
         {props => (
           <div style={props}>
@@ -23,7 +25,7 @@ export default function Description() {
               <Row type="flex">
                 <Col
                   style={{
-                    paddingLeft: `${1}rem`,
+                    paddingLeft: `${1.2}rem`,
                     paddingRight: `${1}rem`,
                     paddingTop: `${3}rem`
                   }}
@@ -34,12 +36,15 @@ export default function Description() {
                   xl={24}
                 >
                   <span
-                    style={{ float: "right", color: "#f7f7f7" }}
+                    style={{ color: "#f7f7f7" }}
                     className="upperStyle wht"
                   >
                     Next >
                   </span>
                 </Col>
+                </Row>
+                {/* height: `${100}vh`,  */}
+                <Row type="flex" style={{ paddingTop: `${8}rem`, }}>
                 <Col
                   style={{ paddingLeft: `${1}rem`, paddingRight: `${1}rem` }}
                   xs={24}
@@ -61,6 +66,8 @@ export default function Description() {
                     Queen
                   </span>
                 </Col>
+                </Row>
+                <Row>
                 <Col
                   style={{
                     paddingLeft: `${1}rem`,
@@ -106,6 +113,8 @@ export default function Description() {
                     <span style={{ fontWeight: "700" }}>Date:</span> May 2019
                   </span>
                 </Col>
+                </Row>
+                <Row>
                 <Col
                   style={{
                     paddingLeft: `${1}rem`,
@@ -121,11 +130,14 @@ export default function Description() {
                     Point of Sale (POS, Webapp), for a restaurant.
                   </p>
                 </Col>
+                </Row>
+                <Row>
                 <Col
                   style={{
                     paddingLeft: `${1}rem`,
                     paddingRight: `${1}rem`,
-                    paddingTop: `${1.2}rem`
+                    paddingTop: `${1.2}rem`,
+                    paddingBottom: `${4}rem`
                   }}
                   xs={24}
                   sm={24}
@@ -152,9 +164,10 @@ export default function Description() {
                     <span className="upperStyle">Code {`<>`} </span>
                   </a>
                 </Col>
-                <Col xs={24} sm={24} md={4} lg={4} xl={4}>
+                </Row>
+                {/* <Col xs={24} sm={24} md={8} lg={8} xl={8}>
                   <img className="responsive" src={bqphone} alt="bg" />
-                </Col>
+                </Col> */}
                 <Col
                   style={{
                     paddingLeft: `${1}rem`,
@@ -197,7 +210,7 @@ export default function Description() {
                 <Col xs={24} sm={24} md={24} lg={24} xl={24}>
                   <img className="responsive" src={mockupsecond} alt="bg" />
                 </Col>
-              </Row>
+              
             </div>
           </div>
         )}
@@ -208,7 +221,7 @@ export default function Description() {
 
 const c2style = {
   paddingTop: 55,
-  height: `${100}vh`
+  height: `${100}vh`,
 };
 const footer = {
   background: "#2e2e2e",
