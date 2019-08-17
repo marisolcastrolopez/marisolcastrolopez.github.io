@@ -3,15 +3,6 @@ import "../../css/index.css";
 import { Transition, animated } from "react-spring/renderprops";
 import { Link } from "react-router-dom";
 import { Icon } from "antd";
-// import { useSpring } from "react-spring";
-// import Test from "../Home/Test"
-// import 'antd/dist/antd.css';
-
-// const props = useSpring({
-//   opacity: 1,
-//   from: { opacity: 0 },
-// })
-// return <animated.h1 style={props}>hello</animated.h1>
 
 export default class HomeContent extends Component {
   state = { show: true };
@@ -29,11 +20,9 @@ export default class HomeContent extends Component {
               paddingTop: `${12}vh`,
               paddingBottom: `${5}%`,
               paddingRight: `${4}%`,
-              // opacity: 0
               transform: 'translate3d(0,-120px,0)'
             }}
             enter={[{
-              // opacity: 1,
               transform: 'translate3d(0,0px,0)'
                }]}
                leave={ {opacity: 0} }

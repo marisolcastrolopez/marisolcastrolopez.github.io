@@ -1,11 +1,19 @@
-import React, { Component } from "react";
-import "../../css/index.css";
+import React, { Component, Fragment } from "react";
+import Description from "../BurgerQueen/Description"
+import { Layout } from "antd";
+import PopupMenu from "../Menu/PopoupMenu";
+const { Header } = Layout;
 
-class ShareSmile extends Component {
-  render () {
+
+export default class ShareSmile extends Component {
+  render() {
     return (
-      <div><p>Hello revealed</p></div>
+    <Fragment>
+    <PopupMenu />
+      <Header style={{ position: "absolute" }}/>
+      <Description/>
+    </Fragment>
     )
   }
 }
-export default ShareSmile;
+
