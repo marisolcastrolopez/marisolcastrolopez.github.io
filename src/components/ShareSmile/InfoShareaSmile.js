@@ -1,3 +1,4 @@
+
 import React, { Fragment } from "react";
 // import { Link } from "react-router-dom";
 import { Row, Col, Icon, Layout } from "antd";
@@ -13,7 +14,7 @@ import mockupbg from "../../img/mockups-bqueeen-bg.jpg";
 import { Spring } from "react-spring/renderprops";
 const { Footer } = Layout;
 
-export default function Description() {
+export default function InfoShareaSmile() {
   return (
     <Fragment>
       <Spring
@@ -52,10 +53,9 @@ export default function Description() {
                   lg={21}
                   xl={21}
                 >
-                  <Link className="menu-links" to="/sharesmile"> <span style={{ color: "#f7f7f7" }} className="upperStyle wht">
+                  <span style={{ color: "#f7f7f7" }} className="upperStyle wht">
                     Next >
-                  </span></Link>
-                 
+                  </span>
                 </Col>
               </Row>
               <Row type="flex" style={{ paddingTop: `${8}rem` }}>
@@ -69,13 +69,13 @@ export default function Description() {
                   xl={21}
                 >
                   <span style={{ display: "block" }} className="proj-title wht">
-                    Burger
+                    Share a
                   </span>
                   <span
                     style={{ display: "block", marginTop: `${-0.6}rem` }}
                     className="proj-title wht"
                   >
-                    Queen
+                    Smile
                   </span>
                 </Col>
               </Row>
@@ -120,7 +120,7 @@ export default function Description() {
                     }}
                     className="wht"
                   >
-                    <span style={{ fontWeight: "700" }}>Date:</span> May 2019
+                    <span style={{ fontWeight: "700" }}>Date:</span> March 2019
                   </span>
                 </Col>
               </Row>
@@ -138,7 +138,7 @@ export default function Description() {
                   xl={21}
                 >
                   <p style={{ fontSize: `${0.9}rem`, color: "#f7f7f7" }}>
-                    Point of Sale (POS, Webapp), for a restaurant.
+                  This is a Social Network App made for people who wants to connect with others to buy, sell or donate children's items. We identified that babies leave a lot of stuff very soon, so this is the main need identified of this project.
                   </p>
                 </Col>
               </Row>

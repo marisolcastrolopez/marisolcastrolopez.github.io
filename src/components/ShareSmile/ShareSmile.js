@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import Description from "../BurgerQueen/Description"
+import InfoShareaSmile from "../ShareSmile/InfoShareaSmile"
 import { Layout } from "antd";
 import PopupMenu from "../Menu/PopoupMenu";
 const { Header } = Layout;
@@ -11,7 +11,7 @@ export default class ShareSmile extends Component {
     <Fragment>
     <PopupMenu />
       <Header style={{ position: "absolute" }}/>
-      <Description/>
+      <InfoShareaSmile/>
     </Fragment>
     )
   }
