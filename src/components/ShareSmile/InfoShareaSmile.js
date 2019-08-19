@@ -9,7 +9,7 @@ import "../../css/grid.css";
 import mockupviews from "../../img/mockups-bqueeen.jpg";
 import mockupfirst from "../../img/mockups-bqueeen-firstui.jpg";
 import mockupsecond from "../../img/mockups-bqueeen-secondui.jpg";
-import mockupbgshare from "../../img/shareasmile-other.jpg";
+import mockupbgshare from "../../img/ox.png";
 
 import { Spring } from "react-spring/renderprops";
 const { Footer } = Layout;
@@ -59,7 +59,7 @@ export default function InfoShareaSmile() {
                   </span>
                 </Col>
               </Row>
-              <Row type="flex" style={{ paddingTop: `${8}rem` }}>
+              <Row type="flex" style={{ paddingTop: `${22}rem` }}>
                 <Col xs={0} sm={0} md={3} lg={3} xl={3} />
                 <Col
                   style={{ paddingLeft: `${1}rem`, paddingRight: `${1}rem` }}
@@ -70,13 +70,7 @@ export default function InfoShareaSmile() {
                   xl={21}
                 >
                   <span style={{ display: "block" }} className="proj-title wht">
-                    Share a
-                  </span>
-                  <span
-                    style={{ display: "block", marginTop: `${-0.6}rem` }}
-                    className="proj-title wht"
-                  >
-                    Smile
+                    Share a Smile
                   </span>
                 </Col>
               </Row>
