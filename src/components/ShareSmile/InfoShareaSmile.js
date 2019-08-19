@@ -5,11 +5,11 @@ import { Row, Col, Icon, Layout } from "antd";
 import "../../css/grid.css";
 // import "../../css/index.css";
 // import bqphone from "../../img/bg-bq-phone.png";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import mockupviews from "../../img/mockups-bqueeen.jpg";
 import mockupfirst from "../../img/mockups-bqueeen-firstui.jpg";
 import mockupsecond from "../../img/mockups-bqueeen-secondui.jpg";
-import mockupbg from "../../img/mockups-bqueeen-bg.jpg";
+import mockupbgshare from "../../img/shareasmile-other.jpg";
 
 import { Spring } from "react-spring/renderprops";
 const { Footer } = Layout;
@@ -21,18 +21,19 @@ export default function InfoShareaSmile() {
         from={{
           opacity: 0,
           marginLeft: -100,
-          backgroundColor: "#ea821f",
-          backgroundImage: `url(${mockupbg})`,
+          backgroundColor: "#9788e7",
+          backgroundImage: `url(${mockupbgshare})`,
           backgroundSize: "cover",
-          height: `${100}vh`,
+          // height: `${100}vh`,
           backgroundPosition: `${50}% ${50}%`
         }}
         to={{
           opacity: 1,
           marginLeft: 0,
-          backgroundColor: "#ea821f",
+          backgroundColor: "#9788e7",
+          backgroundImage: `url(${mockupbgshare})`,
           backgroundSize: "cover",
-          height: `${100}vh`,
+          // height: `${100}vh`,
           backgroundPosition: `${50}% ${50}%`
         }}
       >
@@ -100,8 +101,7 @@ export default function InfoShareaSmile() {
                     }}
                     className="wht"
                   >
-                    <span style={{ fontWeight: "700" }}>Credits:</span> Marisol
-                    Castro
+                    <span style={{ fontWeight: "700" }}>Credits:</span> Developed with Lucy Mendez and Karla Valenzuela
                   </span>
                   <span
                     style={{
@@ -138,7 +138,7 @@ export default function InfoShareaSmile() {
                   xl={21}
                 >
                   <p style={{ fontSize: `${0.9}rem`, color: "#f7f7f7" }}>
-                  This is a Social Network App made for people who wants to connect with others to buy, sell or donate children's items. We identified that babies leave a lot of stuff very soon, so this is the main need identified of this project.
+                  This is a Social Network App made for people who wants to connect with others to buy, sell or donate children's items.
                   </p>
                 </Col>
               </Row>

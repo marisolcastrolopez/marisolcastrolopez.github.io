@@ -23,7 +23,7 @@ export default function Description() {
           backgroundColor: "#ea821f",
           backgroundImage: `url(${mockupbg})`,
           backgroundSize: "cover",
-          height: `${100}vh`,
+          // height: `${100}vh`,
           backgroundPosition: `${50}% ${50}%`
         }}
         to={{
@@ -31,7 +31,7 @@ export default function Description() {
           marginLeft: 0,
           backgroundColor: "#ea821f",
           backgroundSize: "cover",
-          height: `${100}vh`,
+          // height: `${100}vh`,
           backgroundPosition: `${50}% ${50}%`
         }}
       >
