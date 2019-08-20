@@ -3,9 +3,10 @@ import React, { Fragment } from "react";
 import { Row, Col } from "antd";
 import "../../css/grid.css";
 import "../../css/index.css";
-import FooterPort from "../Footer/FooterPort"
+import FooterPort from "../Footer/FooterPort";
 import bgpurple from "../../img/purplebg.png";
 import mockuphones from "../../img/mockuphones.png";
+import deepurple from "../../img/purple-deep.png";
 
 import { Spring } from "react-spring/renderprops";
 
@@ -17,7 +18,7 @@ export default function InfoShareaSmile() {
           opacity: 0,
           marginLeft: -100,
           backgroundColor: "#9788e7",
-          backgroundImage: `url(${bgpurple})`,
+          backgroundImage: `url(${deepurple})`,
           backgroundSize: "cover",
           backgroundPosition: `${50}% ${50}%`
         }}
@@ -25,7 +26,7 @@ export default function InfoShareaSmile() {
           opacity: 1,
           marginLeft: 0,
           backgroundColor: "#9788e7",
-          backgroundImage: `url(${bgpurple})`,
+          backgroundImage: `url(${deepurple})`,
           backgroundSize: "cover",
           backgroundPosition: `${50}% ${50}%`
         }}
@@ -43,14 +44,24 @@ export default function InfoShareaSmile() {
                   }}
                   xs={24}
                   sm={24}
-                  md={21}
-                  lg={21}
-                  xl={21}
+                  md={18}
+                  lg={18}
+                  xl={18}
                 >
-                  <span style={{ color: "#f7f7f7" }} className="upperStyle wht">
-                    Next >
+                  <span
+                    style={{ color: "#f7f7f7", float: "left" }}
+                    className="upperStyle wht"
+                  >
+                    {"<"} Back
+                  </span>
+                  <span
+                    style={{ color: "#f7f7f7", float: "right" }}
+                    className="upperStyle wht"
+                  >
+                    Next {">"}
                   </span>
                 </Col>
+                <Col xs={0} sm={0} md={3} lg={3} xl={3} />
               </Row>
               <Row type="flex" style={{ paddingTop: `${0}rem` }}>
                 <Col xs={0} sm={0} md={3} lg={3} xl={3} />
@@ -58,16 +69,97 @@ export default function InfoShareaSmile() {
                   style={{ paddingLeft: `${1}rem`, paddingRight: `${1}rem` }}
                   xs={24}
                   sm={24}
-                  md={21}
-                  lg={21}
-                  xl={21}
+                  md={9}
+                  lg={9}
+                  xl={9}
                 >
-                  {" "}
                   <img className="responsive" src={mockuphones} alt="Logo" />;
+                </Col>
+                <Col xs={0} sm={0} md={9} lg={9} xl={9}>
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "flex-start",
+                      flexDirection: "column",
+                      height: `${20}vh`,
+                      paddingTop: `${12}%`,
+                      paddingBottom: `${1}%`,
+                    }}
+                  >
+                    <span style={{}} className="proj-title wht">
+                      Share a Smile
+                    </span>
+                    <span
+                      style={{
+                        fontSize: `${0.85}rem`
+                      }}
+                      className="wht"
+                    >
+                      <span style={{ fontWeight: "700" }}>Credits:</span>{" "}
+                      Developed with Lucy Mendez and Karla Valenzuela
+                    </span>
+                    <span
+                      style={{
+                        fontSize: `${0.85}rem`
+                      }}
+                      className="wht"
+                    >
+                      <span
+                        style={{
+                          fontWeight: "700"
+                        }}
+                      >
+                        Role:
+                      </span>{" "}
+                      Front-End Developer / UI Designer
+                    </span>
+                    <span
+                      style={{
+                        fontSize: `${0.85}rem`
+                      }}
+                      className="wht"
+                    >
+                      <span style={{ fontWeight: "700" }}>Date:</span> March
+                      2019
+                    </span>
+                  </div>
+                  <a
+                    className="inner-btn pad-btn-demo btn-purple"
+                    href={"https://burger-queen-gdl002marisol.firebaseapp.com/"}
+                    target={"_blank"}
+                    rel="nofollow noopener noreferrer"
+                  >
+                    <span className="upperStyle">Demo</span>
+                  </a>
+                  <a
+                    className="inner-btn btn-purple"
+                    href={
+                      "https://github.com/marisolcastrolopez/gdl002-burger-queen"
+                    }
+                    target={"_blank"}
+                    rel="nofollow noopener noreferrer"
+                  >
+                    <span className="upperStyle">Code {`<>`} </span>
+                  </a>
+                </Col>
+                <Col xs={0} sm={0} md={3} lg={3} xl={3} />
+              </Row>
+              <Row type="flex" style={{ paddingTop: `${0}rem` }}>
+                <Col xs={0} sm={0} md={3} lg={3} xl={3} />
+                <Col
+                  style={{ paddingLeft: `${1}rem`, paddingRight: `${1}rem` }}
+                  xs={24}
+                  sm={24}
+                  md={0}
+                  lg={0}
+                  xl={0}
+                >
                   <span style={{ display: "block" }} className="proj-title wht">
                     Share a Smile
                   </span>
                 </Col>
+                <Col xs={0} sm={0} md={3} lg={3} xl={3} />
               </Row>
               <Row>
                 <Col xs={0} sm={0} md={3} lg={3} xl={3} />
@@ -79,9 +171,9 @@ export default function InfoShareaSmile() {
                   }}
                   xs={24}
                   sm={24}
-                  md={21}
-                  lg={21}
-                  xl={21}
+                  md={0}
+                  lg={0}
+                  xl={0}
                 >
                   <span
                     style={{
@@ -123,9 +215,9 @@ export default function InfoShareaSmile() {
                   }}
                   xs={24}
                   sm={24}
-                  md={21}
-                  lg={21}
-                  xl={21}
+                  md={0}
+                  lg={0}
+                  xl={0}
                 >
                   <p style={{ fontSize: `${0.9}rem`, color: "#f7f7f7" }}>
                     This is a Social Network App made for people who wants to
@@ -144,12 +236,12 @@ export default function InfoShareaSmile() {
                   }}
                   xs={24}
                   sm={24}
-                  md={21}
-                  lg={21}
-                  xl={21}
+                  md={0}
+                  lg={0}
+                  xl={0}
                 >
                   <a
-                    className="inner-btn pad-btn-demo btn-orange"
+                    className="inner-btn pad-btn-demo btn-purple"
                     href={"https://burger-queen-gdl002marisol.firebaseapp.com/"}
                     target={"_blank"}
                     rel="nofollow noopener noreferrer"
@@ -157,7 +249,7 @@ export default function InfoShareaSmile() {
                     <span className="upperStyle">Demo</span>
                   </a>
                   <a
-                    className="inner-btn btn-orange"
+                    className="inner-btn btn-purple"
                     href={
                       "https://github.com/marisolcastrolopez/gdl002-burger-queen"
                     }
@@ -168,7 +260,7 @@ export default function InfoShareaSmile() {
                   </a>
                 </Col>
               </Row>
-              <FooterPort/>
+              <FooterPort />
             </div>
           </div>
         )}

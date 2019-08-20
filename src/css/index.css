@@ -202,6 +202,13 @@ body {
   -moz-box-shadow: 2px 3px 23px 3px rgba(0, 0, 0, 0.17);
   box-shadow: 2px 3px 23px 3px rgba(0, 0, 0, 0.17);
 }
+.btn-purple {
+  background-color: #f7f7f7;
+  color: #5238de;
+  -webkit-box-shadow: 2px 3px 23px 3px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: 2px 3px 23px 3px rgba(0, 0, 0, 0.17);
+  box-shadow: 2px 3px 23px 3px rgba(0, 0, 0, 0.17);
+}
 
 /* Links */
 a {
