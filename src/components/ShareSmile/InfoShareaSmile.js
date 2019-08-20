@@ -1,12 +1,13 @@
 import React, { Fragment } from "react";
-// import { Link } from "react-router-dom";
-import { Row, Col } from "antd";
+import { Link } from "react-router-dom";
+import { Row, Col, Icon } from "antd";
 import "../../css/grid.css";
 import "../../css/index.css";
 import FooterPort from "../Footer/FooterPort";
 import bgpurple from "../../img/purplebg.png";
 import mockuphones from "../../img/mockuphones.png";
 import deepurple from "../../img/purple-deep.png";
+import teddy from "../../img/teddy.jpg"
 
 import { Spring } from "react-spring/renderprops";
 
@@ -48,18 +49,24 @@ export default function InfoShareaSmile() {
                   lg={18}
                   xl={18}
                 >
-                  <span
-                    style={{ color: "#f7f7f7", float: "left" }}
-                    className="upperStyle wht"
-                  >
-                    {"<"} Back
-                  </span>
-                  <span
-                    style={{ color: "#f7f7f7", float: "right" }}
-                    className="upperStyle wht"
-                  >
-                    Next {">"}
-                  </span>
+                  <Link className="menu-links" to="/burgerqueen">
+                    {" "}
+                    <span
+                      style={{ color: "#f7f7f7", float: "left" }}
+                      className="upperStyle wht"
+                    >
+                      {"<"} Back
+                    </span>
+                  </Link>
+                  <Link className="menu-links" to="/sharesmile">
+                    {" "}
+                    <span
+                      style={{ color: "#f7f7f7", float: "right" }}
+                      className="upperStyle wht"
+                    >
+                      Next {">"}
+                    </span>
+                  </Link>
                 </Col>
                 <Col xs={0} sm={0} md={3} lg={3} xl={3} />
               </Row>
@@ -73,7 +80,7 @@ export default function InfoShareaSmile() {
                   lg={9}
                   xl={9}
                 >
-                  <img className="responsive" src={mockuphones} alt="Logo" />;
+                  <img className="responsive" src={mockuphones} alt="Logo" />
                 </Col>
                 <Col xs={0} sm={0} md={9} lg={9} xl={9}>
                   <div
@@ -84,7 +91,7 @@ export default function InfoShareaSmile() {
                       flexDirection: "column",
                       height: `${20}vh`,
                       paddingTop: `${12}%`,
-                      paddingBottom: `${1}%`,
+                      paddingBottom: `${1}%`
                     }}
                   >
                     <span style={{}} className="proj-title wht">
@@ -258,6 +265,61 @@ export default function InfoShareaSmile() {
                   >
                     <span className="upperStyle">Code {`<>`} </span>
                   </a>
+                </Col>
+              </Row>
+              {/* -----------Next Section--------------- */}
+              <Row>
+                <Col
+                  style={{
+                    // paddingLeft: `${1}rem`,
+                    // paddingRight: `${1}rem`,
+                    backgroundColor: "#f7f7f7",
+                    textAlign: "center"
+                  }}
+                  xs={24}
+                  sm={24}
+                  md={24}
+                  lg={24}
+                  xl={24}
+                >
+                  <span
+                    style={{
+                      display: "block",
+                      fontWeight: 700,
+                      fontSize: `${1.4}rem`,
+                      paddingTop: `${1.5}rem`,
+                      color: "#9788e7"
+                    }}
+                  >
+                    <Icon type="tool" style={{ fontSize: "35px" }} />
+                    <br />
+                    Technologies used
+                  </span>
+                  <span
+                    style={{
+                      fontSize: `${0.9}rem`,
+                      color: "#63605f",
+                      backgroundColor: "#f6f7fa"
+                    }}
+                  >
+                    Javascript ES6 , HTML , CSS , Firebase, Single Page Application,
+                    Sweet Alert, Foundation UI framework, UX Research, Figma, Wireframing.
+                  </span>
+                  <p />
+                  <span
+                    style={{
+                      fontSize: `${0.9}rem`,
+                      color: "#63605f",
+                      display: "block",
+                      fontWeight: 700
+                    }}
+                  >
+                    For Mobile, Tablet and Desktop
+                  </span>
+                  <img style={{
+                    paddingTop: `${2}rem`,
+                    paddingBottom: `${2}rem`,
+                  }} className="responsive" src={teddy} alt="Logo" />
                 </Col>
               </Row>
               <FooterPort />

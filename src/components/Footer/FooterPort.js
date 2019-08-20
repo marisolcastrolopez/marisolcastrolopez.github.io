@@ -62,7 +62,7 @@ export default class FooterPort extends Component {
             </Col>
             <Col xs={6} sm={6} md={2} lg={2} xl={2}>
               <a
-                href={"https://www.linkedin.com/in/marisolcastrolopez/"}
+                href={"https://twitter.com/_marisolcastro"}
                 target={"_blank"}
               >
                 <Icon
