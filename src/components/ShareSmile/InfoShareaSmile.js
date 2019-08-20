@@ -7,7 +7,7 @@ import FooterPort from "../Footer/FooterPort";
 import bgpurple from "../../img/purplebg.png";
 import mockuphones from "../../img/mockuphones.png";
 import deepurple from "../../img/purple-deep.png";
-import teddy from "../../img/teddy.jpg"
+import teddy from "../../img/graybg-teddy.jpg"
 
 import { Spring } from "react-spring/renderprops";
 
@@ -271,8 +271,8 @@ export default function InfoShareaSmile() {
               <Row>
                 <Col
                   style={{
-                    // paddingLeft: `${1}rem`,
-                    // paddingRight: `${1}rem`,
+                    paddingLeft: `${0.5}rem`,
+                    paddingRight: `${0.5}rem`,
                     backgroundColor: "#f7f7f7",
                     textAlign: "center"
                   }}
