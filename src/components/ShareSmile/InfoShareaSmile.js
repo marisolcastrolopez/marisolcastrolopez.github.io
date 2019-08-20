@@ -7,7 +7,7 @@ import FooterPort from "../Footer/FooterPort";
 import bgpurple from "../../img/purplebg.png";
 import mockuphones from "../../img/mockuphones.png";
 import deepurple from "../../img/purple-deep.png";
-import teddy from "../../img/againteddy.jpg"
+import teddy from "../../img/xgray.jpg"
 
 import { Spring } from "react-spring/renderprops";
 
