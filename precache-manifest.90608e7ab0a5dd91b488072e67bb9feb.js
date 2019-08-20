@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "79f5e8834986660f5b3ac8027a473e19",
+    "revision": "96308ed338c8a3badba8c3622a1b0d3a",
     "url": "/index.html"
   },
   {
-    "revision": "cf70d3efe77f61a7df71",
+    "revision": "f0450ad3f49172fa46e3",
     "url": "/static/css/main.284ba2f4.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.8fcd6aac.chunk.js"
   },
   {
-    "revision": "cf70d3efe77f61a7df71",
-    "url": "/static/js/main.a5637c56.chunk.js"
+    "revision": "f0450ad3f49172fa46e3",
+    "url": "/static/js/main.f38f1446.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -22,6 +22,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "48a5089f091d5c5c7ae22f76889d12e8",
     "url": "/static/media/bg-home-sol.48a5089f.jpg"
+  },
+  {
+    "revision": "9e66b4fe0bc462be27db6a6d4c1dbbb2",
+    "url": "/static/media/graybg-teddy.9e66b4fe.jpg"
   },
   {
     "revision": "9a25e8f7979864fae89691be640fbe96",
@@ -50,9 +54,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "380d10b8ff84c8836420edcf15a93ba2",
     "url": "/static/media/purplebg.380d10b8.png"
-  },
-  {
-    "revision": "8e9fe8d5ee9aea08daed9d2940510e8c",
-    "url": "/static/media/teddy.8e9fe8d5.jpg"
   }
 ]);
