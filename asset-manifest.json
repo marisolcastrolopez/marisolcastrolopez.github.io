@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.b0a74dc8.chunk.css",
-    "main.js": "/static/js/main.6c9f9ede.chunk.js",
-    "main.js.map": "/static/js/main.6c9f9ede.chunk.js.map",
+    "main.css": "/static/css/main.284ba2f4.chunk.css",
+    "main.js": "/static/js/main.98ece7bc.chunk.js",
+    "main.js.map": "/static/js/main.98ece7bc.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
     "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/js/2.03f255df.chunk.js": "/static/js/2.03f255df.chunk.js",
-    "static/js/2.03f255df.chunk.js.map": "/static/js/2.03f255df.chunk.js.map",
+    "static/js/2.2d707ddc.chunk.js": "/static/js/2.2d707ddc.chunk.js",
+    "static/js/2.2d707ddc.chunk.js.map": "/static/js/2.2d707ddc.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.eb1cba9b0e0a4e675beadc64de6fa326.js": "/precache-manifest.eb1cba9b0e0a4e675beadc64de6fa326.js",
+    "precache-manifest.cc12c849bc64132a985feb907119bb29.js": "/precache-manifest.cc12c849bc64132a985feb907119bb29.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.b0a74dc8.chunk.css.map": "/static/css/main.b0a74dc8.chunk.css.map",
+    "static/css/main.284ba2f4.chunk.css.map": "/static/css/main.284ba2f4.chunk.css.map",
     "static/media/index.css": "/static/media/bg-home-sol.48a5089f.jpg",
-    "static/media/mockuphones.png": "/static/media/mockuphones.8d068004.png",
+    "static/media/mockuphones.png": "/static/media/mockuphones.9a25e8f7.png",
     "static/media/mockups-bqueeen-bg.jpg": "/static/media/mockups-bqueeen-bg.4394018c.jpg",
     "static/media/mockups-bqueeen-firstui.jpg": "/static/media/mockups-bqueeen-firstui.6a83931d.jpg",
     "static/media/mockups-bqueeen-secondui.jpg": "/static/media/mockups-bqueeen-secondui.4bf603ec.jpg",
     "static/media/mockups-bqueeen.jpg": "/static/media/mockups-bqueeen.6830055b.jpg",
+    "static/media/purple-deep.png": "/static/media/purple-deep.a16ee7c5.png",
     "static/media/purplebg.png": "/static/media/purplebg.380d10b8.png"
   }
 }

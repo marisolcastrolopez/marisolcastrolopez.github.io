@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fd548d932f3cd6534e087d9068e380ae",
+    "revision": "c24819bcc1a7ec3481385c74f70702fb",
     "url": "/index.html"
   },
   {
-    "revision": "139791a8e14e644f6914",
-    "url": "/static/css/main.b0a74dc8.chunk.css"
+    "revision": "25dfdc9f5081766c395f",
+    "url": "/static/css/main.284ba2f4.chunk.css"
   },
   {
-    "revision": "c161e39fbcb901bf3a84",
-    "url": "/static/js/2.03f255df.chunk.js"
+    "revision": "dbce6bacfa20d7fca7a2",
+    "url": "/static/js/2.2d707ddc.chunk.js"
   },
   {
-    "revision": "139791a8e14e644f6914",
-    "url": "/static/js/main.6c9f9ede.chunk.js"
+    "revision": "25dfdc9f5081766c395f",
+    "url": "/static/js/main.98ece7bc.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/bg-home-sol.48a5089f.jpg"
   },
   {
-    "revision": "8d068004bab5f4617d4cd1fd6b0adb6a",
-    "url": "/static/media/mockuphones.8d068004.png"
+    "revision": "9a25e8f7979864fae89691be640fbe96",
+    "url": "/static/media/mockuphones.9a25e8f7.png"
   },
   {
     "revision": "4394018c2cc0d07eae5eba028594d54f",
@@ -42,6 +42,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6830055b60b6c3f7b40d5387555e69bd",
     "url": "/static/media/mockups-bqueeen.6830055b.jpg"
+  },
+  {
+    "revision": "a16ee7c54eab2729672921ec8f56075a",
+    "url": "/static/media/purple-deep.a16ee7c5.png"
   },
   {
     "revision": "380d10b8ff84c8836420edcf15a93ba2",
