@@ -7,7 +7,7 @@ import FooterPort from "../Footer/FooterPort";
 import bgpurple from "../../img/purplebg.png";
 import mockuphones from "../../img/mockuphones.png";
 import deepurple from "../../img/purple-deep.png";
-import teddy from "../../img/xgray.jpg"
+import teddy from "../../img/xgray.jpg";
 
 import { Spring } from "react-spring/renderprops";
 
@@ -268,7 +268,25 @@ export default function InfoShareaSmile() {
                 </Col>
               </Row>
               {/* -----------Next Section--------------- */}
-              <Row>
+              <Row style={{
+                    paddingLeft: `${0.5}rem`,
+                    paddingRight: `${0.5}rem`,
+                    backgroundColor: "#f7f7f7",
+                    textAlign: "center"
+                  }}>
+                <Col
+                  style={{
+                    paddingLeft: `${0.5}rem`,
+                    paddingRight: `${0.5}rem`,
+                    backgroundColor: "#f7f7f7",
+                    textAlign: "center"
+                  }}
+                  xs={0}
+                  sm={0}
+                  md={4}
+                  lg={4}
+                  xl={4}
+                />
                 <Col
                   style={{
                     paddingLeft: `${0.5}rem`,
@@ -278,9 +296,9 @@ export default function InfoShareaSmile() {
                   }}
                   xs={24}
                   sm={24}
-                  md={24}
-                  lg={24}
-                  xl={24}
+                  md={16}
+                  lg={16}
+                  xl={16}
                 >
                   <span
                     style={{
@@ -302,8 +320,9 @@ export default function InfoShareaSmile() {
                       backgroundColor: "#f6f7fa"
                     }}
                   >
-                    Javascript ES6 , HTML , CSS , Firebase, Single Page Application,
-                    Sweet Alert, Foundation UI framework, UX Research, Figma, Wireframing.
+                    Javascript ES6 , HTML , CSS , Firebase, Single Page
+                    Application, Sweet Alert, Foundation UI framework, UX
+                    Research, Figma, Wireframing.
                   </span>
                   <p />
                   <span
@@ -316,11 +335,29 @@ export default function InfoShareaSmile() {
                   >
                     For Mobile, Tablet and Desktop
                   </span>
-                  <img style={{
-                    paddingTop: `${2}rem`,
-                    paddingBottom: `${2}rem`,
-                  }} className="responsive" src={teddy} alt="Logo" />
+                  <img
+                    style={{
+                      paddingTop: `${2}rem`,
+                      paddingBottom: `${2}rem`
+                    }}
+                    className="responsive"
+                    src={teddy}
+                    alt="Logo"
+                  />
                 </Col>
+                <Col
+                  style={{
+                    paddingLeft: `${0.5}rem`,
+                    paddingRight: `${0.5}rem`,
+                    backgroundColor: "#f7f7f7",
+                    textAlign: "center"
+                  }}
+                  xs={0}
+                  sm={0}
+                  md={4}
+                  lg={4}
+                  xl={4}
+                />
               </Row>
               <FooterPort />
             </div>
