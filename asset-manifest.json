@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.77de97a1.chunk.css",
-    "main.js": "/static/js/main.ca36ba30.chunk.js",
-    "main.js.map": "/static/js/main.ca36ba30.chunk.js.map",
+    "main.js": "/static/js/main.28be403a.chunk.js",
+    "main.js.map": "/static/js/main.28be403a.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
     "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
     "static/js/2.c08c14e5.chunk.js": "/static/js/2.c08c14e5.chunk.js",
     "static/js/2.c08c14e5.chunk.js.map": "/static/js/2.c08c14e5.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.d32a670230cc68eb09b12cdf035dbf82.js": "/precache-manifest.d32a670230cc68eb09b12cdf035dbf82.js",
+    "precache-manifest.be3b6b6f244b82f92d54eec0067d41b8.js": "/precache-manifest.be3b6b6f244b82f92d54eec0067d41b8.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.77de97a1.chunk.css.map": "/static/css/main.77de97a1.chunk.css.map",
     "static/media/index.css": "/static/media/bg-home-sol.48a5089f.jpg",
