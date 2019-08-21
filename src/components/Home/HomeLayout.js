@@ -13,7 +13,7 @@ class Home extends Component {
     return (
       <Layout className="container-home-bg">
         <Header>
-        <Link style={{ zIndex: 9999}} to="/burgerqueen">
+        <Link style={{ zIndex: 9999}} to="/">
         <img
             className="logo-img"
             src={logoImg}

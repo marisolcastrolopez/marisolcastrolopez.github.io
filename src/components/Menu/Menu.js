@@ -45,13 +45,8 @@ export default ({ close }) => (
               </Link>
             </li>
             <li onClick={close}>
-              <Link className="menu-links" to="/eyeroad">
-                Eye Road
-              </Link>
-            </li>
-            <li onClick={close}>
               <Link className="menu-links" to="/alyapp">
-                Aly App
+                Train Brain
               </Link>
             </li>
             <li onClick={close}>
