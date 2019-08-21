@@ -14,7 +14,7 @@ export default ({ close }) => (
   >
     {props => (
       <Fragment>
-        <div style={props} className="menu">
+        <div style={{props, overflow: "hidden"}} className="menu">
           <ul>
             <li>
               <img
