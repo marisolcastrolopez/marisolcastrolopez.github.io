@@ -43,7 +43,7 @@ export default class BurgerQueen extends Component {
               width: `${30}%`,
               maxWidth: `${7.5}em`,
               paddingLeft: `${2}%`,
-              paddingTop: `${3}%`,
+              // paddingTop: `${3}%`,
               height: "auto",
               float: "left",
               zIndex: 9999,

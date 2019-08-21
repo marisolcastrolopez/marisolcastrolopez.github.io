@@ -5,6 +5,7 @@ import BurgerQueen from './components/BurgerQueen/BurgerQueen';
 import ShareSmile from './components/ShareSmile/ShareSmile';
 import EyeRoad from './components/EyeRoad/EyeRoad';
 import AlyApp from './components/AlyApp/AlyApp';
+import TrainBrain from './components/TrainBrain/TrainBrain'
 import AboutMe from './components/AboutMe/AboutMe';
 
 
@@ -18,6 +19,7 @@ const AppRouter = () => {
         <Route path="/sharesmile" component={ShareSmile} />
         <Route path="/eyeroad" component={EyeRoad} />
         <Route path="/alyapp" component={AlyApp} />
+        <Route path="/trainbrain" component={TrainBrain} />
         <Route path="/aboutme" component={AboutMe} />
         </Switch>
     </main>

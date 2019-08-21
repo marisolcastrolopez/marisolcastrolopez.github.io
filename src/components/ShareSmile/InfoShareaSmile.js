@@ -4,7 +4,7 @@ import { Row, Col, Icon } from "antd";
 import "../../css/grid.css";
 import "../../css/index.css";
 import FooterPort from "../Footer/FooterPort";
-import bgpurple from "../../img/purplebg.png";
+// import bgpurple from "../../img/purplebg.png";
 import mockuphones from "../../img/mockuphones.png";
 import deepurple from "../../img/purple-deep.png";
 import teddy from "../../img/xgray.jpg";

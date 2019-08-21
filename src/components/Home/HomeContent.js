@@ -1,13 +1,15 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import "../../css/index.css";
+import "../../css/grid.css";
+import { Row, Col, Icon } from "antd";
 import { Transition, animated } from "react-spring/renderprops";
 import { Link } from "react-router-dom";
-import { Icon } from "antd";
 
 export default class HomeContent extends Component {
   state = { show: true };
   render() {
     return (
+      <Fragment>
       <div className="pad-section">
         <div className="reveals-main">
           <Transition
@@ -31,6 +33,9 @@ export default class HomeContent extends Component {
               show &&
               (props => (
                 <animated.div style={props}>
+                <Row type="flex">
+                <Col xs={0} sm={0} md={4} lg={4} xl={4} />
+                <Col xs={24} sm={24} md={16} lg={16} xl={16}>
                   <span className="titles whiteFont">
                     Hello! I'm <br />
                     <span className="boldTitle whiteFont">Marisol Castro</span>
@@ -47,12 +52,21 @@ export default class HomeContent extends Component {
                   <br />
                   <br />
                   <br />
+                  </Col>
+                  <Col xs={0} sm={0} md={4} lg={4} xl={4} />
+                  </Row>
+                  <Row>
+                  <Col xs={0} sm={0} md={4} lg={4} xl={4} />
+                  <Col xs={24} sm={24} md={8} lg={8} xl={8}>
                   <Link className="line-btn" to="/burgerqueen">
                     <span className="upperStyle">
                       See Proyects
                       <Icon className="arrow1 iconAnt" type="arrow-right" />
-                    </span>
+                    </span>       
                   </Link>
+                  </Col>
+                  <Col xs={0} sm={0} md={12} lg={12} xl={12} />
+                  </Row>
                 </animated.div>
               ))
             }
@@ -62,6 +76,7 @@ export default class HomeContent extends Component {
         <br />
         <br />
       </div>
+      </Fragment>
     );
   }
 }
